@@ -1,0 +1,35 @@
+body {
+  font-family: Brush Script MT;
+  font-size: 45px;
+  margin: 0;
+  padding: 0; }
+
+.app {
+  text-align: center; }
+
+.app-logo {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  width: 100%; }
+
+.app-header {
+  background-color: #ec8396;
+  color: #fff;
+  height: 400px;
+  padding: 2px; }
+  .app-header .splash {
+    height: 100%;
+    width: 100%; }
+
+.app-title {
+  font-size: 2.5em; }
+
+.app-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
