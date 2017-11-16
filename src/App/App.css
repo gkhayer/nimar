@@ -1,26 +1,47 @@
 body {
+  background-color: #ededee;
+  color: #bcb5b5;
   font-family: Brush Script MT;
-  font-size: 45px;
+  font-size: 35px;
+  font-style: italic;
   margin: 0;
   padding: 0; }
 
+.container {
+  margin: 0 100px 10px;
+  max-width: var(--max-content-width);
+  padding: 0 0 40px; }
+
 .app {
+  background-image: url("/assets/images/image1.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px;
   text-align: center; }
 
 .app-logo {
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  display: none;
   height: 100%;
   width: 100%; }
 
 .app-header {
   background-color: #ec8396;
   color: #fff;
-  height: 400px;
-  padding: 2px; }
+  display: none;
+  height: 400px; }
   .app-header .splash {
     height: 100%;
     width: 100%; }
+    .app-header .splash .background-text {
+      bottom: 220px;
+      color: #e3e3e3;
+      display: inline;
+      font-size: 3em;
+      position: relative;
+      z-index: 3; }
 
 .app-title {
   font-size: 2.5em; }

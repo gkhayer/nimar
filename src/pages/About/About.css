@@ -11,17 +11,3 @@ body {
   margin: 0 100px 10px;
   max-width: var(--max-content-width);
   padding: 0 0 40px; }
-
-nav a {
-  color: #222;
-  margin: 0 100px;
-  padding: 10px;
-  text-decoration: none; }
-
-.navbar {
-  margin: 30px 0; }
-
-.selected {
-  color: #c68888; }
-  .selected:hover {
-    color: #ec8396; }

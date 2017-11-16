@@ -1,12 +1,18 @@
 @import '../variables';
 
 .app {
+  background-image: url('/assets/images/image1.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px;
   text-align: center;
 }
 
 .app-logo {
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  display: none;
   height: 100%;
   width: 100%;
 }
@@ -14,12 +20,21 @@
 .app-header {
   background-color: $pink;
   color: $white;
+  display: none;
   height: 400px;
-  padding: 2px;
 
   .splash {
     height: 100%;
     width: 100%;
+
+    .background-text {
+      bottom: 220px;
+      color: $off-white;
+      display: inline;
+      font-size: 3em;
+      position: relative;
+      z-index: 3;
+    }
   }
 }
 
