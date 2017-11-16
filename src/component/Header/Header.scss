@@ -4,13 +4,20 @@ nav {
   a {
     color: $black;
     margin: 0 100px;
-    padding: 10px;
+    padding: 50px;
     text-decoration: none;
   }
 }
 
 .navbar {
-  margin: 30px 0;
+  background-color: $header-gray;
+  box-shadow: 10px 10px 5px #888888;
+  height: 150px;
+  margin: -35px -35px 30px;
+}
+
+.navbar-header {
+  padding: 50px;
 }
 
 .selected {

@@ -5,6 +5,7 @@ $off-white: #e3e3e3;
 //dark shades
 $black: #222;
 $gray: #bcb5b5;
+$header-gray: #b3acac26;
 
 //pink shades
 $pink: #ec8396;
@@ -22,7 +23,7 @@ body {
   background-color: $bodybackground;
   color: $gray;
   font-family: Brush Script MT;
-  font-size: 35px;
+  font-size: 45px;
   font-style: italic;
   margin: 0;
   padding: 0;
@@ -30,7 +31,7 @@ body {
 
 .container {
   //border-bottom: .5px solid $gray;
-  margin: 0 100px 10px;
+  margin: 0 140px 10px;
   max-width: var(--max-content-width);
   padding: 0 0 40px;
 }

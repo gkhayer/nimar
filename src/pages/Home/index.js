@@ -5,7 +5,7 @@ import './Home.css';
 export default class Home extends React.Component {
   render() {
     return (
-      <div className="container" id="home">
+      <div id="home">
         <div className="mdl-grid">
           <div className="mdl-cell mdl-cell--4-col">
             <div className="demo-card-wide mdl-card mdl-shadow--2dp">
@@ -21,12 +21,12 @@ export default class Home extends React.Component {
                 Mauris sagittis pellentesque lacus eleifend lacinia...
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Mauris sagittis pellentesque lacus eleifend lacinia...
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet
             </p>
           </div>
           </div>
 
-          <div className="mdl-grid">
+          <div className="mdl-grid notes-cards">
           {
             home.map((value, idx) => {
               return (
@@ -35,7 +35,7 @@ export default class Home extends React.Component {
                     <div className="mdl-card__title mdl-card--expand">
                       <i style={{'color': 'pink'}} className="material-icons heart">favorite</i>
                     </div>
-                    <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div className="flip-container">
                       <div className="flipper">
                         <div className="front">
                           <img className="home-img" src={value.imagefront} alt={value.timeline}/>
@@ -45,12 +45,8 @@ export default class Home extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div className="mdl-card__supporting-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Aenan convallis.
-                    </div>
-                    <div className="mdl-card__actions mdl-card--border">
-                    </div>
+                    <div className="mdl-card__supporting-text supporting-text">{value.quote}</div>
+                    <div className="mdl-card__actions mdl-card--border"></div>
                   </div>
                 </div>
             )})

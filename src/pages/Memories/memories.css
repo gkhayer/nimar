@@ -12,7 +12,7 @@ body {
   max-width: var(--max-content-width);
   padding: 0 0 40px; }
 
-.about {
+.memories {
   margin: 80px 0; }
-  .about p {
+  .memories p {
     font-size: 50px; }

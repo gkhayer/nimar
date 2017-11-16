@@ -1,9 +1,10 @@
 import React from 'react';
+import './About.css';
 
 export default class About extends React.Component {
   render() {
     return(
-      <div className="container" id="about">
+      <div className="about" id="about">
       <p>About us</p>
       <ul className="demo-list-item mdl-list">
       <li className="mdl-list__item">

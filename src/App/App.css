@@ -2,17 +2,18 @@ body {
   background-color: #ededee;
   color: #bcb5b5;
   font-family: Brush Script MT;
-  font-size: 35px;
+  font-size: 45px;
   font-style: italic;
   margin: 0;
   padding: 0; }
 
 .container {
-  margin: 0 100px 10px;
+  margin: 0 140px 10px;
   max-width: var(--max-content-width);
   padding: 0 0 40px; }
 
 .app {
+  background-attachment: fixed;
   background-image: url("/assets/images/image1.gif");
   background-repeat: no-repeat;
   background-size: cover;

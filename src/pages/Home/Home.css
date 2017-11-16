@@ -2,13 +2,13 @@ body {
   background-color: #ededee;
   color: #bcb5b5;
   font-family: Brush Script MT;
-  font-size: 35px;
+  font-size: 45px;
   font-style: italic;
   margin: 0;
   padding: 0; }
 
 .container {
-  margin: 0 100px 10px;
+  margin: 0 140px 10px;
   max-width: var(--max-content-width);
   padding: 0 0 40px; }
 
@@ -18,15 +18,15 @@ body {
   .demo-card-wide .mdl-card__title {
     background: url("/assets/images/placeholder3.jpg") center/cover; }
 
-.navbar-header {
-  padding: 20px; }
+.notes-cards {
+  margin: 0 250px; }
 
 .textarea {
   border: 1px solid #bcb5b5; }
   .textarea p {
     font-size: 30px;
     letter-spacing: 0;
-    line-height: 60px;
+    line-height: 50px;
     margin: 0 0 16px;
     padding: 20px; }
     .textarea p:first-child {
@@ -38,6 +38,8 @@ body {
 
 .demo-card-square {
   display: inline-flex; }
+  .demo-card-square .supporting-text {
+    font-size: 18px; }
 
 .front, .back {
   backface-visibility: hidden;
@@ -67,4 +69,4 @@ body {
 .flipper {
   position: relative;
   transform-style: preserve-3d;
-  transition: 0.6s; }
+  transition: .6s; }

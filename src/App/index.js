@@ -11,16 +11,18 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <div className="app-header">
-          <div className="splash">
-            <div style={{backgroundImage: `url(${logo})`}} className="app-logo" />
-            <p className="background-text"></p>
-          </div>
-        </div>
         <Header></Header>
-        <Home></Home>
-        <Memories></Memories>
-        <About></About>
+        <div className="container">
+          <div className="app-header">
+            <div className="splash">
+              <div style={{backgroundImage: `url(${logo})`}} className="app-logo" />
+              <p className="background-text"></p>
+            </div>
+          </div>
+          <Home></Home>
+          <Memories></Memories>
+          <About></About>
+        </div>
       </div>
     );
   }
