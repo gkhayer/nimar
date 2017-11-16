@@ -1,4 +1,5 @@
 import React from 'react';
+import {memories} from '../../data';
 import './memories.css';
 
 export default class Memories extends React.Component {
@@ -6,13 +7,18 @@ export default class Memories extends React.Component {
     return(
       <div className="memories" id="memories">
         <p>Memories</p>
-        <div className="mdl-grid">
-          <div className="mdl-cell mdl-cell--6-col">2</div>
-          <div className="mdl-cell mdl-cell--4-col">2</div>
-          <div className="mdl-cell mdl-cell--2-col">2</div>
-          <div className="mdl-cell mdl-cell--6-col">2</div>
-          <div className="mdl-cell mdl-cell--4-col">2</div>
-          <div className="mdl-cell mdl-cell--2-col">2</div>
+        <div className="memories-container">
+          <div className="mdl-grid">
+          {
+            memories.map((value, id) => {
+              return (
+                <div key ={`memories${id}`} className="mdl-cell mdl-cell--6-col">
+                  <img className="memories-images" src={value.image}/>
+                </div>
+              )
+            })
+          }
+          </div>
         </div>
       </div>
     )
