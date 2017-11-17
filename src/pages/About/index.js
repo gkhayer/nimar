@@ -5,24 +5,22 @@ export default class About extends React.Component {
   render() {
     return(
       <div className="about" id="about">
-      <p>About us</p>
-      <ul className="demo-list-item mdl-list">
-      <li className="mdl-list__item">
-        <span className="mdl-list__item-primary-content">
-          x
-        </span>
-      </li>
-      <li className="mdl-list__item">
-        <span className="mdl-list__item-primary-content">
-          y
-        </span>
-      </li>
-      <li className="mdl-list__item">
-        <span className="mdl-list__item-primary-content">
-          z
-        </span>
-      </li>
-    </ul>
+        <p>About Me</p>
+        <div className="about-text">
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris sagittis pellentesque lacus eleifend lacinia...
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris sagittis pellentesque lacus eleifend lacinia...
+              Lorem ipsum dolor sit ametLorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris sagittis pellentesque lacus eleifend lacinia...
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Mauris sagittis pellentesque lacus eleifend lacinia...
+              Lorem ipsum dolor sit amet
+          </div>
+          <div style={{textAlign: 'center'}}>
+            <span>Education</span>
+          </div>
+        </div>
       </div>
     )
   }

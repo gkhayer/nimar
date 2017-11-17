@@ -8,6 +8,20 @@
   }
 }
 
-.memories-images {
-  display: inline;
+.memories-container {
+  margin: 0 150px;
+
+  .wrapper-memories {
+    height: 300px;
+    width: 300px;
+  }
+
+  .memories-images {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
 }
+

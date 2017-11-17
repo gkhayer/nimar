@@ -12,8 +12,10 @@ export default class Memories extends React.Component {
           {
             memories.map((value, id) => {
               return (
-                <div key ={`memories${id}`} className="mdl-cell mdl-cell--6-col">
-                  <img className="memories-images" src={value.image}/>
+                <div key ={`memories${id}`} className="mdl-cell mdl-cell--3-col">
+                  <div className="wrapper-memories">
+                    <img className="memories-images" src={value.image}/>
+                  </div>
                 </div>
               )
             })

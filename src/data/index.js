@@ -33,10 +33,6 @@ const memories = [
     timeline: ''
   },
   {
-    image: '/assets/images/babies/baby4.jpg',
-    timeline: ''
-  },
-  {
     image: '/assets/images/babies/baby5.jpg',
     timeline: ''
   },
@@ -46,6 +42,30 @@ const memories = [
   },
   {
     image: '/assets/images/babies/baby7.jpg',
+    timeline: ''
+  },
+  {
+    image: '/assets/images/babies/baby9.jpg',
+    timeline: ''
+  },
+  {
+    image: '/assets/images/babies/baby10.jfif',
+    timeline: ''
+  },
+  {
+    image: '/assets/images/babies/baby11.jpeg',
+    timeline: ''
+  },
+  {
+    image: '/assets/images/babies/baby12.jfif',
+    timeline: ''
+  },
+  {
+    image: '/assets/images/babies/baby13.jfif',
+    timeline: ''
+  },
+  {
+    image: '/assets/images/babies/baby17.jpg',
     timeline: ''
   }
 ];

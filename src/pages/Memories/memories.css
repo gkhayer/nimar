@@ -17,5 +17,14 @@ body {
   .memories p {
     font-size: 50px; }
 
-.memories-images {
-  display: inline; }
+.memories-container {
+  margin: 0 150px; }
+  .memories-container .wrapper-memories {
+    height: 300px;
+    width: 300px; }
+  .memories-container .memories-images {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%; }
