@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px;
+  position: absolute;
   text-align: center; }
 
 .app-logo {

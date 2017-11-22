@@ -25,3 +25,16 @@
   }
 }
 
+.page-numbers {
+  display: flex;
+  list-style: none;
+
+  li {
+    color: blue;
+    cursor: pointer;
+    margin-right: .3em;
+    user-select: none;
+  }
+}
+
+
