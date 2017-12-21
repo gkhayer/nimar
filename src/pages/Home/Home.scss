@@ -4,6 +4,11 @@
   height: 350px;
   width: 512px;
 
+  @media only screen and (max-width: 500px) {
+    height: 515px;
+    width: 465px;
+}
+
   .mdl-card__title {
     background: url('/assets/images/placeholder3.jpg') center / cover;
   }
@@ -15,6 +20,10 @@
 
 .textarea {
   border: 1px solid $gray;
+
+  @media only screen and (max-width: 500px) {
+    width: 440px;
+}
 
   p {
     font-size: 30px;
@@ -75,7 +84,7 @@
   height: 250px;
   transform: rotateY(180deg);
   width: 330px;
-}
+}                 
 
 .flipper {
   position: relative;

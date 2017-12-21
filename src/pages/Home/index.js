@@ -7,7 +7,7 @@ export default class Home extends React.Component {
     return (
       <div id="home">
         <div className="mdl-grid">
-          <div className="mdl-cell mdl-cell--4-col">
+          <div className="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
             <div className="demo-card-wide mdl-card mdl-shadow--2dp">
               <div className="mdl-card__title mdl-card--expand"></div>
               <div className="mdl-card__actions">
@@ -24,13 +24,13 @@ export default class Home extends React.Component {
                 Lorem ipsum dolor sit amet
             </p>
           </div>
-          </div>
+        </div>
 
           <div className="mdl-grid notes-cards">
           {
             home.map((value, idx) => {
               return (
-                <div key={`home${idx}`} className="mdl-cell mdl-cell--4-col">
+                <div key={`home${idx}`} className="mdl-cell mdl-cell--4-col mdl-cell--3-col-phone">
                   <div className="demo-card-square mdl-card mdl-shadow--2dp">
                     <div className="mdl-card__title mdl-card--expand">
                       <i style={{'color': 'pink'}} className="material-icons heart">favorite</i>

@@ -15,6 +15,10 @@ body {
 .demo-card-wide {
   height: 350px;
   width: 512px; }
+  @media only screen and (max-width: 500px) {
+    .demo-card-wide {
+      height: 515px;
+      width: 465px; } }
   .demo-card-wide .mdl-card__title {
     background: url("/assets/images/placeholder3.jpg") center/cover; }
 
@@ -23,6 +27,9 @@ body {
 
 .textarea {
   border: 1px solid #bcb5b5; }
+  @media only screen and (max-width: 500px) {
+    .textarea {
+      width: 440px; } }
   .textarea p {
     font-size: 30px;
     letter-spacing: 0;
