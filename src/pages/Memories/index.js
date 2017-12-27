@@ -28,7 +28,7 @@ export default class Memories extends React.Component {
             this.state.pageOfItems.map((item, id) => {
               return (
                 <div key ={`memories${id}`} className="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone">
-                  <div className="memories-images" style={{backgroundImage: `url(${item.image})`}} alt="Photo Not visible"/>
+                  <div className="memories-images" style={{backgroundImage: `url(${item.image})`}} alt={item.timeline}/>
                 </div>
               )
             })

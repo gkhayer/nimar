@@ -22,78 +22,83 @@ const home = [
 const memories = [
   {
     image: '/assets/images/nimar/image.jpg',
-    timeline: ''
+    timeline: '1'
   },
   { 
-    image: 'https://source.unsplash.com/zh7GEuORbUw/600x799',  
+    image: 'https://source.unsplash.com/zh7GEuORbUw/600x799',
+    timeline: '2'
   },
   {
     image: '/assets/images/nimar/image28.jpg',  
-    timeline: ''
+    timeline: '3'
   },
   {
     image: '/assets/images/nimar/image4.jpg', 
-    timeline: ''
+    timeline: '4'
   },
   {
     image: '/assets/images/nimar/image6.jpg',
-    timeline: ''
+    timeline: '5'
   },
   {
     image: '/assets/images/nimar/image8.jpg',  
-    timeline: ''
+    timeline: '6'
   },
   { 
-    image: 'https://source.unsplash.com/NQSWvyVRIJk/800x599',   
+    image: 'https://source.unsplash.com/NQSWvyVRIJk/800x599',
+    timeline: '7'
   },
   {
     image: '/assets/images/nimar/image9.jpg',
-    timeline: ''
+    timeline: '8'
   },
   {
     image: '/assets/images/nimar/image10.jpg',
-    timeline: ''
+    timeline: '9'
   },
   {
     image: '/assets/images/nimar/image19.jpg',
-    timeline: ''
+    timeline: '10'
   },
   { 
-    image: 'https://source.unsplash.com/Dm-qxdynoEc/800x799',   
+    image: 'https://source.unsplash.com/Dm-qxdynoEc/800x799',
+    timeline: '11'
   },
   {
     image: '/assets/images/nimar/image29.jpg',
-    timeline: ''
+    timeline: '12'
   },
   {
     image: '/assets/images/nimar/image21.jpg',
-    timeline: ''
+    timeline: '13'
   },
   { 
-    image: 'https://source.unsplash.com/PpOHJezOalU/800x599',   
+    image: 'https://source.unsplash.com/PpOHJezOalU/800x599',
+    timeline: '14'
   },
   {
     image: '/assets/images/nimar/image23.jpg',
-    timeline: ''
+    timeline: '15'
   },
   {
     image: '/assets/images/nimar/image30.jpg',
-    timeline: ''
+    timeline: '16'
   },
   {
     image: '/assets/images/nimar/image32.jpg',
-    timeline: ''
+    timeline: '17'
   },
   { 
-    image: 'https://source.unsplash.com/epcsn8Ed8kY/600x799',  
+    image: 'https://source.unsplash.com/epcsn8Ed8kY/600x799',
+    timeline: '18'
   },
   {
     image: '/assets/images/nimar/image17.jpg',
-    timeline: ''
+    timeline: '19'
   },
   {
     image: '/assets/images/nimar/image22.jpg',
-    timeline: ''
+    timeline: '20'
   },
 ];
 
