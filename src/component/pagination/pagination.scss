@@ -11,88 +11,61 @@
     font-size: 20px;
 
     >a {
-      position: relative;
-      float: left;
-      padding: 6px 12px;
-      margin-left: -1px;
-      line-height: 1.42857143;
+      background-color: $white;
+      border: 1px solid $off-gray-darker;
+      border-radius: 22px;
       color: $black;
-      text-decoration: none;
-      background-color: #fff;
-      border: 1px solid #ddd;
       cursor: pointer;
+      float: left;
+      line-height: 1.42857143;
+      margin-left: -1px;
+      padding: 6px 12px;
+      position: relative;
+      text-decoration: none;
 
       &:hover {
-        background-color: #eee;
-        border-color: #ddd;
-        color: #23527c;
+        background-color: $off-gray;
+        border-color: $off-gray-darker;
+        color: $black;
         z-index: 3;
       }
   }
 
     &:first-child {
       >a {
-        border-bottom-left-radius: 4px;
-        border-top-left-radius: 4px;
         margin-left: 0;
       }
 
       >span {
-        border-bottom-left-radius: 4px;
-        border-top-left-radius: 4px;
         margin-left: 0;
       }
     }
   }
 
   >.active {
-		>a {
-			background-color: #337ab7;
-			border-color: #337ab7;
-			color: #fff;
-			cursor: pointer;
+    >a {
+      background-color: $light-pink;
+      border-color: $off-gray-darker;
+      color: $white;
+      cursor: pointer;
       z-index: 2;
 
-			&:focus {
-				background-color: #337ab7;
-				border-color: #337ab7;
-				color: #fff;
-				cursor: pointer;
-				z-index: 2;
+      &:focus {
+        background-color: $light-pink;
+        color: transparent;
+        cursor: pointer;
+        opacity: .5;
+        z-index: 2;
       }
 
-			&:hover {
-				background-color: #337ab7;
-				border-color: #337ab7;
-				color: #fff;
-				cursor: pointer;
-				z-index: 2;
-			}
+      &:hover {
+        background-color: $light-pink;
+        border-color: $off-gray-darker;
+        color: $white;
+        cursor: pointer;
+        z-index: 2;
+      }
     }
-
-		>span {
-			z-index: 2;
-			color: #fff;
-			cursor: pointer;
-			background-color: #337ab7;
-      border-color: #337ab7;
-
-			&:focus {
-				background-color: #337ab7;
-				border-color: #337ab7;
-				color: #fff;;
-				cursor: pointer;
-				z-index: 2;
-      }
-
-			&:hover {
-				background-color: #337ab7;
-				border-color: #337ab7;
-				color: #fff;
-				cursor: pointer;
-				z-index: 2;
-			}
-		}
-	}
+  }
 }
 

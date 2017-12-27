@@ -1,6 +1,6 @@
 body {
   background-color: #ededee;
-  color: #bcb5b5;
+  color: #8a8686;
   font-family: Brush Script MT;
   font-size: 45px;
   font-style: italic;
@@ -18,7 +18,8 @@ body {
     font-size: 50px; }
 
 .about-text {
-  border: 0.5px solid #bcb5b5;
+  background-color: #dff2f7;
+  border: 0.5px solid #8a8686;
   font-size: 30px;
   line-height: 40px;
   padding: 40px; }

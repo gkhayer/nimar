@@ -12,29 +12,18 @@
   margin: 0 150px;
 
   .wrapper-memories {
-    height: 300px;
-    //width: 300px;
+    height: 100%;
   }
 
   .memories-images {
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    padding-top: 100%;
     width: 100%;
   }
 }
 
-.page-numbers {
-  display: flex;
-  list-style: none;
 
-  li {
-    color: blue;
-    cursor: pointer;
-    margin-right: .3em;
-    user-select: none;
-  }
-}
 
 

@@ -30,7 +30,7 @@ export default class Home extends React.Component {
           {
             home.map((value, idx) => {
               return (
-                <div key={`home${idx}`} className="mdl-cell mdl-cell--4-col mdl-cell--3-col-phone">
+                <div key={`home${idx}`} className="flipcard mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
                   <div className="demo-card-square mdl-card mdl-shadow--2dp">
                     <div className="mdl-card__title mdl-card--expand">
                       <i style={{'color': 'pink'}} className="material-icons heart">favorite</i>

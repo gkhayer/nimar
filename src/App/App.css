@@ -1,6 +1,6 @@
 body {
   background-color: #ededee;
-  color: #bcb5b5;
+  color: #8a8686;
   font-family: Brush Script MT;
   font-size: 45px;
   font-style: italic;
@@ -20,6 +20,36 @@ body {
   padding: 35px;
   position: absolute;
   text-align: center; }
+  .app .back-top {
+    bottom: 50px;
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 100px;
+    width: 40px;
+    z-index: 10; }
+    .app .back-top .back-top-content {
+      background-color: #a0abae;
+      border-radius: 20px;
+      color: #fff;
+      height: 40px;
+      text-align: center;
+      width: 40px; }
+      .app .back-top .back-top-content:hover {
+        background-color: #8a8686; }
+      .app .back-top .back-top-content .mdl-tooltip {
+        color: #fff;
+        font-size: 15px;
+        line-height: 20px; }
+      .app .back-top .back-top-content .arrow-upward {
+        display: inline-block;
+        font-style: normal;
+        line-height: 1;
+        margin-top: 8px;
+        text-align: center;
+        text-rendering: optimizeLegibility;
+        text-transform: none;
+        vertical-align: baseline; }
 
 .app-logo {
   background-position: center;

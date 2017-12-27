@@ -1,6 +1,6 @@
 body {
   background-color: #ededee;
-  color: #bcb5b5;
+  color: #8a8686;
   font-family: Brush Script MT;
   font-size: 45px;
   font-style: italic;
@@ -24,9 +24,18 @@ body {
 
 .notes-cards {
   margin: 0 250px; }
+  @media only screen and (max-width: 500px) {
+    .notes-cards .flipcard {
+      display: inline; }
+      .notes-cards .flipcard:nth-child(3) {
+        display: none; } }
+  @media only screen and (max-width: 500px) {
+    .notes-cards {
+      margin: 0; } }
 
 .textarea {
-  border: 1px solid #bcb5b5; }
+  background-color: #dff2f7;
+  border: 1px solid #8a8686; }
   @media only screen and (max-width: 500px) {
     .textarea {
       width: 440px; } }
@@ -37,7 +46,7 @@ body {
     margin: 0 0 16px;
     padding: 20px; }
     .textarea p:first-child {
-      color: #bcb5b5; }
+      color: #8a8686; }
 
 .home-img {
   height: 250px;

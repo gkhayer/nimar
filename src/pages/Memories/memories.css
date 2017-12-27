@@ -1,6 +1,6 @@
 body {
   background-color: #ededee;
-  color: #bcb5b5;
+  color: #8a8686;
   font-family: Brush Script MT;
   font-size: 45px;
   font-style: italic;
@@ -20,19 +20,10 @@ body {
 .memories-container {
   margin: 0 150px; }
   .memories-container .wrapper-memories {
-    height: 300px; }
+    height: 100%; }
   .memories-container .memories-images {
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    padding-top: 100%;
     width: 100%; }
-
-.page-numbers {
-  display: flex;
-  list-style: none; }
-  .page-numbers li {
-    color: blue;
-    cursor: pointer;
-    margin-right: .3em;
-    user-select: none; }

@@ -21,80 +21,80 @@ const home = [
 
 const memories = [
   {
-    image: '/assets/images/babies/baby1.jpg', width: 4, height: 3,
-    timeline: ''
-  },
-  {
-    image: '/assets/images/babies/baby2.jpg', width: 1, height: 1,
+    image: '/assets/images/nimar/image.jpg',
     timeline: ''
   },
   { 
-    image: 'https://source.unsplash.com/2ShvY8Lf6l0/800x599', width: 3, height: 4, 
-  },
-  { 
-    image: 'https://source.unsplash.com/I1ASdgphUH4/800x599', width: 3, height: 4 , 
+    image: 'https://source.unsplash.com/zh7GEuORbUw/600x799',  
   },
   {
-    image: '/assets/images/babies/baby5.jpg', width: 3, height: 4 ,
+    image: '/assets/images/nimar/image28.jpg',  
     timeline: ''
   },
   {
-    image: '/assets/images/babies/baby3.jpg', width: 4, height: 3 ,
+    image: '/assets/images/nimar/image4.jpg', 
     timeline: ''
   },
-  { 
-    image: 'https://source.unsplash.com/zh7GEuORbUw/600x799', width: 3, height: 4 
-  },
   {
-    image: '/assets/images/babies/baby6.jpg', width: 4, height: 3,
+    image: '/assets/images/nimar/image6.jpg',
     timeline: ''
   },
-  { 
-    image: 'https://source.unsplash.com/NQSWvyVRIJk/800x599', width: 4, height: 3 
-  },
   {
-    image: '/assets/images/babies/baby7.jpg',width: 3, height: 4,
+    image: '/assets/images/nimar/image8.jpg',  
     timeline: ''
   },
   { 
-    image: 'https://source.unsplash.com/Dm-qxdynoEc/800x799', width: 1, height: 1 
+    image: 'https://source.unsplash.com/NQSWvyVRIJk/800x599',   
   },
   {
-    image: '/assets/images/babies/baby9.jpg',
+    image: '/assets/images/nimar/image9.jpg',
     timeline: ''
   },
   {
-    image: '/assets/images/babies/baby10.jfif',
+    image: '/assets/images/nimar/image10.jpg',
     timeline: ''
   },
-  { 
-    image: 'https://source.unsplash.com/PpOHJezOalU/800x599', width: 4, height: 3 
-  },
   {
-    image: '/assets/images/babies/baby11.jpeg',
+    image: '/assets/images/nimar/image19.jpg',
     timeline: ''
   },
   { 
-    image: 'https://source.unsplash.com/iecJiKe_RNg/600x799', width: 3, height: 4 
+    image: 'https://source.unsplash.com/Dm-qxdynoEc/800x799',   
   },
   {
-    image: '/assets/images/babies/baby12.jfif',
+    image: '/assets/images/nimar/image29.jpg',
     timeline: ''
   },
   {
-    image: '/assets/images/babies/baby13.jfif',
-    timeline: ''
-  },
-  { 
-    image: 'https://source.unsplash.com/qDkso9nvCg0/600x799', width: 3, height: 4 
-  },
-  {
-    image: '/assets/images/babies/baby17.jpg',
+    image: '/assets/images/nimar/image21.jpg',
     timeline: ''
   },
   { 
-    image: 'https://source.unsplash.com/epcsn8Ed8kY/600x799', width: 3, height: 4 
-  }
+    image: 'https://source.unsplash.com/PpOHJezOalU/800x599',   
+  },
+  {
+    image: '/assets/images/nimar/image23.jpg',
+    timeline: ''
+  },
+  {
+    image: '/assets/images/nimar/image30.jpg',
+    timeline: ''
+  },
+  {
+    image: '/assets/images/nimar/image32.jpg',
+    timeline: ''
+  },
+  { 
+    image: 'https://source.unsplash.com/epcsn8Ed8kY/600x799',  
+  },
+  {
+    image: '/assets/images/nimar/image17.jpg',
+    timeline: ''
+  },
+  {
+    image: '/assets/images/nimar/image22.jpg',
+    timeline: ''
+  },
 ];
 
 export {

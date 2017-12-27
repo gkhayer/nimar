@@ -16,9 +16,25 @@
 
 .notes-cards {
   margin: 0 250px;
+
+  .flipcard {
+    @media only screen and (max-width: 500px) {
+
+      display: inline;
+
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    margin: 0;
+  }
 }
 
 .textarea {
+  background-color: $theme;
   border: 1px solid $gray;
 
   @media only screen and (max-width: 500px) {
@@ -84,7 +100,7 @@
   height: 250px;
   transform: rotateY(180deg);
   width: 330px;
-}                 
+}
 
 .flipper {
   position: relative;
