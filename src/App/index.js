@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../images/image11.jpg';
 import Header from '../component/Header';
 import Home from '../pages/Home';
 import About from '../pages/About';
@@ -11,7 +10,6 @@ export default class App extends React.Component {
 
   constructor() {
     super();
-
     this.state = {
         intervalId: 0
     };
@@ -37,7 +35,7 @@ export default class App extends React.Component {
         <div className="container">
           <div className="app-header">
             <div className="splash">
-              <div style={{backgroundImage: `url(${logo})`}} className="app-logo" />
+              <div className="app-logo" />
               <p className="background-text"></p>
             </div>
           </div>
