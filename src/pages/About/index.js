@@ -6,7 +6,7 @@ export default class About extends React.Component {
     return(
       <div className="about mdl-grid" id="about">
         <div className="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
-          <p>About Me</p>
+          <div className="headings">About Me</div>
           <div className="about-text">
             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Mauris sagittis pellentesque lacus eleifend lacinia...

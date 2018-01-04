@@ -1,7 +1,7 @@
 const home = [
   {
-    imagefront: 'assets/images/babies/baby1.jpg',
-    imageback: 'assets/images/babies/baby1.jpg',
+    imagefront: 'assets/images/babies/img1.jpg',
+    imageback: 'assets/images/babies/img3.jpg',
     timeline: '1st Day',
     quote: 'Your First Breath Took Ours Away'
   },
@@ -100,6 +100,98 @@ const memories = [
     image: 'assets/images/nimar/image22.jpg',
     timeline: '20'
   },
+  {
+    image: 'assets/images/nimar/image34.jpg',
+    timeline: '21'
+  },
+  {
+    image: 'assets/images/nimar/image35.jpg',
+    timeline: '22'
+  },
+  {
+    image: 'assets/images/nimar/image36.jpg',
+    timeline: '23'
+  },
+  {
+    image: 'assets/images/nimar/image37.jpg',
+    timeline: '24'
+  },
+  {
+    image: 'assets/images/nimar/image38.jpg',
+    timeline: '25'
+  },
+  {
+    image: 'assets/images/nimar/image39.jpg',
+    timeline: '26'
+  },
+  {
+    image: 'assets/images/nimar/image40.jpg',
+    timeline: '27'
+  },
+  {
+    image: 'assets/images/nimar/image41.jpg',
+    timeline: '28'
+  },
+  {
+    image: 'assets/images/nimar/image42.jpg',
+    timeline: '29'
+  },
+  {
+    image: 'assets/images/nimar/image43.jpg',
+    timeline: '30'
+  },
+  {
+    image: 'assets/images/nimar/image44.jpg',
+    timeline: '31'
+  },
+  {
+    image: 'assets/images/nimar/image45.jpg',
+    timeline: '32'
+  },
+  {
+    image: 'assets/images/nimar/image46.jpg',
+    timeline: '33'
+  },
+  {
+    image: 'assets/images/nimar/image47.jpg',
+    timeline: '34'
+  },
+  {
+    image: 'assets/images/nimar/image48.jpg',
+    timeline: '35'
+  },
+  {
+    image: 'assets/images/nimar/image50.jpg',
+    timeline: '36'
+  },
+  {
+    image: 'assets/images/nimar/image51.jpg',
+    timeline: '37'
+  },
+  {
+    image: 'assets/images/nimar/image52.jpg',
+    timeline: '38'
+  },
+  {
+    image: 'assets/images/nimar/image54.jpg',
+    timeline: '39'
+  },
+  {
+    image: 'assets/images/nimar/image55.jpg',
+    timeline: '40'
+  },
+  {
+    image: 'assets/images/nimar/image56.jpg',
+    timeline: '41'
+  },
+  {
+    image: 'assets/images/nimar/image57.jpg',
+    timeline: '42'
+  },
+  {
+    image: 'assets/images/nimar/image58.jpg',
+    timeline: '43'
+  }
 ];
 
 export {

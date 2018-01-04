@@ -33,19 +33,13 @@ export default class App extends React.Component {
       <div className="app">
         <Header></Header>
         <div className="container">
-          <div className="app-header">
-            <div className="splash">
-              <div className="app-logo" />
-              <p className="background-text"></p>
-            </div>
-          </div>
           <Home></Home>
           <Memories></Memories>
           <About></About>
           <div className="back-top">
             <div className="back-top-content" onClick={ () => { this.scrollToTop(); }}>
               <i id="tt2" className="material-icons arrow-upward">arrow_upward</i>
-              <div className="mdl-tooltip mdl-tooltip--large" for="tt2">Scroll Up</div>
+              <div className="mdl-tooltip mdl-tooltip--large" htmlFor="tt2">Scroll Up</div>
             </div>
           </div>
         </div>

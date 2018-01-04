@@ -1,13 +1,17 @@
 @import '../variables';
 
 .app {
+  align-items: center;
   background-attachment: fixed;
   background-image: url('../images/image1.gif');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   text-align: center;
+  width: 100%;
 
   .back-top {
     bottom: 50px;
@@ -57,27 +61,6 @@
   display: none;
   height: 100%;
   width: 100%;
-}
-
-.app-header {
-  background-color: $pink;
-  color: $white;
-  display: none;
-  height: 400px;
-
-  .splash {
-    height: 100%;
-    width: 100%;
-
-    .background-text {
-      bottom: 220px;
-      color: $off-white;
-      display: inline;
-      font-size: 3em;
-      position: relative;
-      z-index: 3;
-    }
-  }
 }
 
 .app-title {

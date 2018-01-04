@@ -1,25 +1,35 @@
 body {
   background-color: #ededee;
-  color: #8a8686;
-  font-family: Brush Script MT;
-  font-size: 45px;
+  color: #222;
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
   font-style: italic;
+  line-height: 40px;
   margin: 0;
   padding: 0; }
+  @media only screen and (max-width: 500px) {
+    body {
+      font-size: 16px; } }
 
 .container {
-  margin: 0 140px 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: center;
   max-width: var(--max-content-width);
-  padding: 0 0 40px; }
+  padding: 0 0 40px;
+  width: 80%; }
+
+.headings {
+  font-size: 4rem; }
 
 .about {
   margin: 100px 0; }
-  .about p {
-    font-size: 50px; }
 
 .about-text {
   background-color: #dff2f7;
-  border: 0.5px solid #8a8686;
-  font-size: 30px;
-  line-height: 40px;
+  border: 0.5px solid #564947;
+  font-size: 2rem;
   padding: 40px; }

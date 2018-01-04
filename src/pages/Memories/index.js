@@ -21,7 +21,7 @@ export default class Memories extends React.Component {
   render() {
     return(
       <div className="memories" id="memories">
-        <p>Memories</p>
+        <div className="headings">Memories</div>
         <div className="memories-container">
           <div className="mdl-grid">
           {

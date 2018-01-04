@@ -1,25 +1,42 @@
 body {
   background-color: #ededee;
-  color: #8a8686;
-  font-family: Brush Script MT;
-  font-size: 45px;
+  color: #222;
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
   font-style: italic;
+  line-height: 40px;
   margin: 0;
   padding: 0; }
+  @media only screen and (max-width: 500px) {
+    body {
+      font-size: 16px; } }
 
 .container {
-  margin: 0 140px 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: center;
   max-width: var(--max-content-width);
-  padding: 0 0 40px; }
+  padding: 0 0 40px;
+  width: 80%; }
+
+.headings {
+  font-size: 4rem; }
 
 .app {
+  align-items: center;
   background-attachment: fixed;
   background-image: url("../images/image1.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px;
-  position: absolute;
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%; }
   .app .back-top {
     bottom: 50px;
     cursor: pointer;
@@ -36,7 +53,7 @@ body {
       text-align: center;
       width: 40px; }
       .app .back-top .back-top-content:hover {
-        background-color: #8a8686; }
+        background-color: #564947; }
       .app .back-top .back-top-content .mdl-tooltip {
         color: #fff;
         font-size: 15px;
@@ -58,22 +75,6 @@ body {
   display: none;
   height: 100%;
   width: 100%; }
-
-.app-header {
-  background-color: #ec8396;
-  color: #fff;
-  display: none;
-  height: 400px; }
-  .app-header .splash {
-    height: 100%;
-    width: 100%; }
-    .app-header .splash .background-text {
-      bottom: 220px;
-      color: #e3e3e3;
-      display: inline;
-      font-size: 3em;
-      position: relative;
-      z-index: 3; }
 
 .app-title {
   font-size: 2.5em; }

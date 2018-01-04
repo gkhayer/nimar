@@ -5,9 +5,9 @@ import './Home.css';
 export default class Home extends React.Component {
   render() {
     return (
-      <div id="home">
-        <div className="mdl-grid">
-          <div className="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+      <div className="home" id="home">
+        <div className="wrapper">
+          <div className="child picture">
             <div className="demo-card-wide mdl-card mdl-shadow--2dp">
               <div className="mdl-card__title mdl-card--expand"></div>
               <div className="mdl-card__actions">
@@ -15,7 +15,7 @@ export default class Home extends React.Component {
               </div>
             </div>
           </div>
-          <div className="mdl-cell mdl-cell--8-col textarea">
+          <div className="child textarea">
             <p>You're my Happy</p>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Mauris sagittis pellentesque lacus eleifend lacinia...
@@ -26,11 +26,11 @@ export default class Home extends React.Component {
           </div>
         </div>
 
-          <div className="mdl-grid notes-cards">
+          <div className="notes-cards">
           {
             home.map((value, idx) => {
               return (
-                <div key={`home${idx}`} className="flipcard mdl-cell mdl-cell--4-col mdl-cell--2-col-phone">
+                <div key={`home${idx}`} className="flipcard">
                   <div className="demo-card-square mdl-card mdl-shadow--2dp">
                     <div className="mdl-card__title mdl-card--expand">
                       <i style={{'color': 'pink'}} className="material-icons heart">favorite</i>
@@ -45,7 +45,7 @@ export default class Home extends React.Component {
                         </div>
                       </div>
                     </div>
-                    <div className="mdl-card__supporting-text supporting-text">{value.quote}</div>
+                    <div className="mdl-card__supporting-text quote">{value.quote}</div>
                     <div className="mdl-card__actions mdl-card--border"></div>
                   </div>
                 </div>

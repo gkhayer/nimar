@@ -1,30 +1,62 @@
 @import '../../variables';
 
-nav {
-  a {
-    color: $black;
-    margin: 0 100px;
-    padding: 50px;
-    text-decoration: none;
+.header {
+ // align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 100%;
+
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
   }
-}
 
-.navbar {
-  background-color: $header-gray;
-  box-shadow: 10px 10px 5px $boxshadow;
-  display: grid;
-  height: 150px;
-  margin: -35px -35px 30px;
-}
+  @media only screen and (max-width: 500px) {
+    .navigation {
+      flex-direction: column;
+    }
+  }
 
-.navbar-header {
-  padding: 50px;
-}
+  .navbar {
+    background-color: $header-gray;
+    box-shadow: 0 10px 5px $boxshadow;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 
-.selected {
-  color: $light-pink;
+    a {
+      color: $black;
+      margin: 0 100px;
+      padding: 50px;
+      text-decoration: none;
 
-  &:hover {
-    color: $pink;
+      @media only screen and (max-width: 500px) {
+      // display: table-row;
+      }
+    }
+
+    @media all and (max-width: 800px) {
+      .navigation {
+        justify-content: space-around;
+      }
+    }
+
+    @media all and (max-width: 500px) {
+      .navigation {
+        flex-direction: column;
+      }
+    }
+
+    .selected {
+      color: $black;
+
+      &:visited,
+      &:focus,
+      &:hover {
+        color: $gray;
+      }
+    }
   }
 }

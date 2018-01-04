@@ -1,109 +1,148 @@
 @import '../../variables';
 
-.demo-card-wide {
-  height: 350px;
-  width: 512px;
+.home {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
 
   @media only screen and (max-width: 500px) {
-    height: 515px;
-    width: 465px;
+    flex-flow: row wrap;
 }
 
-  .mdl-card__title {
-    background: url('../../images/placeholders/placeholder3.jpg') center / cover;
-  }
-}
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 3%;
 
-.notes-cards {
-  margin: 0 250px;
-
-  .flipcard {
     @media only screen and (max-width: 500px) {
+      flex-flow: row wrap;
+      //width: 50%;
+  }
 
-      display: inline;
+    .picture {
+      width: 35%;
 
-      &:nth-child(3) {
-        display: none;
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+      }
+  }
+
+    .textarea {
+      background-color: $theme;
+      border: 1px solid $gray;
+      width: 65%;
+
+      @media only screen and (max-width: 500px) {
+        width: 440px;
+    }
+
+      p {
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 2rem;
+        margin: 0 0 16px;
+        padding: 20px;
+
+        &:first-child {
+          color: $gray;
+        }
       }
     }
   }
 
-  @media only screen and (max-width: 500px) {
-    margin: 0;
-  }
-}
+  .demo-card-wide {
+    height: 100%;
+    width: 100%;
 
-.textarea {
-  background-color: $theme;
-  border: 1px solid $gray;
+    @media only screen and (max-width: 500px) {
+      height: 515px;
+      width: 465px;
+    }
 
-  @media only screen and (max-width: 500px) {
-    width: 440px;
-}
-
-  p {
-    font-size: 30px;
-    letter-spacing: 0;
-    line-height: 50px;
-    margin: 0 0 16px;
-    padding: 20px;
-
-    &:first-child {
-      color: $gray;
+    .mdl-card__title {
+      background: url('../../images/placeholders/placeholder3.jpg') center / cover;
     }
   }
-}
 
-.home-img {
-  height: 250px;
-  width: 250px;
-}
+  .notes-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 20px 0;
 
-.demo-card-square {
-  display: inline-flex;
+    .flipcard {
+      flex-basis: auto;
+      flex-shrink: 1;
 
-  .supporting-text {
-    font-size: 18px;
+      @media only screen and (max-width: 500px) {
+
+        display: inline;
+
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      margin: 0;
+    }
   }
-}
 
-%extend-1 {
-  backface-visibility: hidden;
-  left: 0;
-  position: absolute;
-  top: 0;
-}
+  .home-img {
+    height: 250px;
+    width: 250px;
+  }
 
-.flip-container {
-  height: 260px;
-  perspective: 1000px;
+  .demo-card-square {
+    display: inline-flex;
 
-  &:hover .flipper {
+    .quote {
+      font-size: 1.3rem;
+    }
+  }
+
+  %extend-1 {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .flip-container {
+    height: 260px;
+    perspective: 1000px;
+
+    &:hover .flipper {
+      transform: rotateY(180deg);
+    }
+
+    &.hover .flipper {
     transform: rotateY(180deg);
+    }
   }
 
-  &.hover .flipper {
-   transform: rotateY(180deg);
-	}
-}
+  .front {
+    @extend %extend-1;
+    height: 250px;
+    transform: rotateY(0deg);
+    width: 330px;
+    z-index: 2;
+  }
 
-.front {
-  @extend %extend-1;
-  height: 250px;
-  transform: rotateY(0deg);
-  width: 330px;
-  z-index: 2;
-}
+  .back {
+    @extend %extend-1;
+    height: 250px;
+    transform: rotateY(180deg);
+    width: 330px;
+  }
 
-.back {
-  @extend %extend-1;
-  height: 250px;
-  transform: rotateY(180deg);
-  width: 330px;
-}
-
-.flipper {
-  position: relative;
-  transform-style: preserve-3d;
-  transition: .6s;
+  .flipper {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .6s;
+  }
 }

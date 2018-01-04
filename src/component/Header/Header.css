@@ -1,34 +1,59 @@
 body {
   background-color: #ededee;
-  color: #8a8686;
-  font-family: Brush Script MT;
-  font-size: 45px;
+  color: #222;
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
   font-style: italic;
+  line-height: 40px;
   margin: 0;
   padding: 0; }
+  @media only screen and (max-width: 500px) {
+    body {
+      font-size: 16px; } }
 
 .container {
-  margin: 0 140px 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: center;
   max-width: var(--max-content-width);
-  padding: 0 0 40px; }
+  padding: 0 0 40px;
+  width: 80%; }
 
-nav a {
-  color: #222;
-  margin: 0 100px;
-  padding: 50px;
-  text-decoration: none; }
+.headings {
+  font-size: 4rem; }
 
-.navbar {
-  background-color: #dbecf1;
-  box-shadow: 10px 10px 5px #888;
-  display: grid;
-  height: 150px;
-  margin: -35px -35px 30px; }
-
-.navbar-header {
-  padding: 50px; }
-
-.selected {
-  color: #c68888; }
-  .selected:hover {
-    color: #ec8396; }
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 100%; }
+  @media all and (max-width: 800px) {
+    .header .navigation {
+      justify-content: space-around; } }
+  @media only screen and (max-width: 500px) {
+    .header .navigation {
+      flex-direction: column; } }
+  .header .navbar {
+    background-color: #dbecf1;
+    box-shadow: 0 10px 5px #888;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+    .header .navbar a {
+      color: #222;
+      margin: 0 100px;
+      padding: 50px;
+      text-decoration: none; }
+    @media all and (max-width: 800px) {
+      .header .navbar .navigation {
+        justify-content: space-around; } }
+    @media all and (max-width: 500px) {
+      .header .navbar .navigation {
+        flex-direction: column; } }
+    .header .navbar .selected {
+      color: #222; }
+      .header .navbar .selected:visited, .header .navbar .selected:focus, .header .navbar .selected:hover {
+        color: #564947; }
