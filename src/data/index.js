@@ -21,6 +21,46 @@ const home = [
 
 const memories = [
   {
+    image: 'assets/images/nimar/image44.jpg',
+    timeline: '31'
+  },
+  {
+    image: 'assets/images/nimar/image45.jpg',
+    timeline: '32'
+  },
+  {
+    image: 'assets/images/nimar/image47.jpg',
+    timeline: '34'
+  },
+  {
+    image: 'assets/images/nimar/image57.jpg',
+    timeline: '42'
+  },
+  {
+    image: 'assets/images/nimar/image50.jpg',
+    timeline: '36'
+  },
+  {
+    image: 'assets/images/nimar/image51.jpg',
+    timeline: '37'
+  },
+  {
+    image: 'assets/images/nimar/image52.jpg',
+    timeline: '38'
+  },
+  {
+    image: 'assets/images/nimar/image54.jpg',
+    timeline: '39'
+  },
+  {
+    image: 'assets/images/nimar/image55.jpg',
+    timeline: '40'
+  },
+  {
+    image: 'assets/images/nimar/image58.jpg',
+    timeline: '43'
+  },
+  {
     image: 'assets/images/nimar/image.jpg',
     timeline: '1'
   },
@@ -141,56 +181,12 @@ const memories = [
     timeline: '30'
   },
   {
-    image: 'assets/images/nimar/image44.jpg',
-    timeline: '31'
-  },
-  {
-    image: 'assets/images/nimar/image45.jpg',
-    timeline: '32'
-  },
-  {
     image: 'assets/images/nimar/image46.jpg',
     timeline: '33'
   },
   {
-    image: 'assets/images/nimar/image47.jpg',
-    timeline: '34'
-  },
-  {
     image: 'assets/images/nimar/image48.jpg',
     timeline: '35'
-  },
-  {
-    image: 'assets/images/nimar/image50.jpg',
-    timeline: '36'
-  },
-  {
-    image: 'assets/images/nimar/image51.jpg',
-    timeline: '37'
-  },
-  {
-    image: 'assets/images/nimar/image52.jpg',
-    timeline: '38'
-  },
-  {
-    image: 'assets/images/nimar/image54.jpg',
-    timeline: '39'
-  },
-  {
-    image: 'assets/images/nimar/image55.jpg',
-    timeline: '40'
-  },
-  {
-    image: 'assets/images/nimar/image56.jpg',
-    timeline: '41'
-  },
-  {
-    image: 'assets/images/nimar/image57.jpg',
-    timeline: '42'
-  },
-  {
-    image: 'assets/images/nimar/image58.jpg',
-    timeline: '43'
   }
 ];
 

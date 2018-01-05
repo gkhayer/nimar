@@ -23,20 +23,39 @@ body {
   width: 80%; }
 
 .headings {
-  font-size: 4rem; }
+  color: #564947;
+  font-size: 3rem;
+  padding: 10px;
+  width: 100%; }
 
 .memories {
-  margin: 80px 0; }
-  .memories p {
-    font-size: 50px; }
-
-.memories-container {
-  margin: 0 150px; }
-  .memories-container .wrapper-memories {
-    height: 100%; }
-  .memories-container .memories-images {
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%; }
+  .memories .memories-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .memories .memories-container .image-container {
+      box-sizing: border-box;
+      min-width: 0;
+      padding: 4px;
+      width: 17%; }
+      @media only screen and (max-width: 500px) {
+        .memories .memories-container .image-container {
+          width: 50%; } }
+    .memories .memories-container .memories-images {
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      box-sizing: border-box;
+      height: 342px;
+      width: 100%; }
+  .memories .pagination {
+    display: flex;
+    justify-content: center;
     width: 100%; }

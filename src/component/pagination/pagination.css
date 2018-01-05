@@ -23,7 +23,10 @@ body {
   width: 80%; }
 
 .headings {
-  font-size: 4rem; }
+  color: #564947;
+  font-size: 3rem;
+  padding: 10px;
+  width: 100%; }
 
 .pagination {
   border-radius: 4px;
@@ -32,7 +35,10 @@ body {
   padding-left: 0; }
   .pagination > li {
     display: inline;
-    font-size: 2rem; }
+    font-size: 1.3rem; }
+    @media only screen and (max-width: 500px) {
+      .pagination > li {
+        font-size: 1rem; } }
     .pagination > li > a {
       background-color: #fff;
       border: 1px solid #ddd;
@@ -42,9 +48,12 @@ body {
       float: left;
       line-height: 1.42857143;
       margin-left: -1px;
-      padding: 6px 12px;
+      padding: 0 10px;
       position: relative;
       text-decoration: none; }
+      @media only screen and (max-width: 500px) {
+        .pagination > li > a {
+          padding: 0 5px; } }
       .pagination > li > a:hover {
         background-color: #eee;
         border-color: #ddd;

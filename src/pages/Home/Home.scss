@@ -5,6 +5,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  width: 100%;
 
   @media only screen and (max-width: 500px) {
     flex-flow: row wrap;
@@ -15,35 +16,35 @@
     flex-flow: row nowrap;
     justify-content: space-evenly;
     margin-top: 3%;
+    width: 100%;
 
     @media only screen and (max-width: 500px) {
-      flex-flow: row wrap;
-      //width: 50%;
+      margin-top: 15%;
   }
 
     .picture {
       width: 35%;
 
       @media only screen and (max-width: 500px) {
-        width: 100%;
+        //width: 100%;
       }
   }
 
     .textarea {
       background-color: $theme;
       border: 1px solid $gray;
-      width: 65%;
+      //width: 65%;
 
       @media only screen and (max-width: 500px) {
-        width: 440px;
+       // width: 50%;
     }
 
       p {
-        font-size: 2rem;
+        font-size: 1.3rem;
         letter-spacing: 0;
         line-height: 2rem;
         margin: 0 0 16px;
-        padding: 20px;
+        padding: 10px;
 
         &:first-child {
           color: $gray;
@@ -57,8 +58,8 @@
     width: 100%;
 
     @media only screen and (max-width: 500px) {
-      height: 515px;
-      width: 465px;
+     // height: 515px;
+     // width: 465px;
     }
 
     .mdl-card__title {
@@ -68,27 +69,21 @@
 
   .notes-cards {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     margin: 20px 0;
+    width: 100%;
 
     .flipcard {
       flex-basis: auto;
       flex-shrink: 1;
+      margin-bottom: 20px;
 
       @media only screen and (max-width: 500px) {
-
-        display: inline;
-
         &:nth-child(3) {
           display: none;
         }
       }
-    }
-
-    @media only screen and (max-width: 500px) {
-      margin: 0;
     }
   }
 
@@ -101,48 +96,48 @@
     display: inline-flex;
 
     .quote {
-      font-size: 1.3rem;
+      font-size: 1rem;
+  }
+
+    %extend-1 {
+      backface-visibility: hidden;
+      left: 0;
+      position: absolute;
+      top: 0;
     }
-  }
 
-  %extend-1 {
-    backface-visibility: hidden;
-    left: 0;
-    position: absolute;
-    top: 0;
-  }
+    .flip-container {
+      height: 260px;
+      perspective: 1000px;
 
-  .flip-container {
-    height: 260px;
-    perspective: 1000px;
+      &:hover .flipper {
+        transform: rotateY(180deg);
+      }
 
-    &:hover .flipper {
+      &.hover .flipper {
       transform: rotateY(180deg);
     }
+  }
 
-    &.hover .flipper {
-    transform: rotateY(180deg);
+    .front {
+      @extend %extend-1;
+      height: 250px;
+      transform: rotateY(0deg);
+      width: 330px;
+      z-index: 2;
     }
-  }
 
-  .front {
-    @extend %extend-1;
-    height: 250px;
-    transform: rotateY(0deg);
-    width: 330px;
-    z-index: 2;
-  }
+    .back {
+      @extend %extend-1;
+      height: 250px;
+      transform: rotateY(180deg);
+      width: 330px;
+    }
 
-  .back {
-    @extend %extend-1;
-    height: 250px;
-    transform: rotateY(180deg);
-    width: 330px;
-  }
-
-  .flipper {
-    position: relative;
-    transform-style: preserve-3d;
-    transition: .6s;
+    .flipper {
+      position: relative;
+      transform-style: preserve-3d;
+      transition: .6s;
+    }
   }
 }
