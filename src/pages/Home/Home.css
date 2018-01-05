@@ -59,53 +59,70 @@ body {
         padding: 10px; }
         .home .wrapper .textarea p:first-child {
           color: #564947; }
-  .home .demo-card-wide {
-    height: 100%;
-    width: 100%; }
-    .home .demo-card-wide .mdl-card__title {
-      background: url("../../images/placeholders/placeholder3.jpg") center/cover; }
+    .home .wrapper .demo-card-wide {
+      height: 100%;
+      width: 100%; }
+      .home .wrapper .demo-card-wide .mdl-card__title {
+        background: url("../../images/placeholders/placeholder3.jpg") center/cover; }
   .home .notes-cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin: 20px 0;
+    margin-top: 20px;
     width: 100%; }
     .home .notes-cards .flipcard {
-      flex-basis: auto;
-      flex-shrink: 1;
-      margin-bottom: 20px; }
+      box-sizing: border-box;
+      width: 21%; }
       @media only screen and (max-width: 500px) {
-        .home .notes-cards .flipcard:nth-child(3) {
-          display: none; } }
-  .home .home-img {
-    height: 250px;
-    width: 250px; }
-  .home .demo-card-square {
-    display: inline-flex; }
-    .home .demo-card-square .quote {
-      font-size: 1rem; }
-    .home .demo-card-square .front, .home .demo-card-square .back {
-      backface-visibility: hidden;
-      left: 0;
-      position: absolute;
-      top: 0; }
-    .home .demo-card-square .flip-container {
-      height: 260px;
-      perspective: 1000px; }
-      .home .demo-card-square .flip-container:hover .flipper {
-        transform: rotateY(180deg); }
-      .home .demo-card-square .flip-container.hover .flipper {
-        transform: rotateY(180deg); }
-    .home .demo-card-square .front {
-      height: 250px;
-      transform: rotateY(0deg);
-      width: 330px;
-      z-index: 2; }
-    .home .demo-card-square .back {
-      height: 250px;
-      transform: rotateY(180deg);
-      width: 330px; }
-    .home .demo-card-square .flipper {
-      position: relative;
-      transform-style: preserve-3d;
-      transition: .6s; }
+        .home .notes-cards .flipcard {
+          padding: 3px;
+          width: 50%; }
+          .home .notes-cards .flipcard:nth-child(3) {
+            display: none; } }
+    .home .notes-cards .demo-card-square {
+      width: 100%; }
+      @media only screen and (max-width: 500px) {
+        .home .notes-cards .demo-card-square .card-title {
+          padding: 0; } }
+      .home .notes-cards .demo-card-square .quote {
+        font-size: 1rem;
+        text-align: justify;
+        width: 100%; }
+        @media only screen and (max-width: 500px) {
+          .home .notes-cards .demo-card-square .quote {
+            display: none; } }
+      .home .notes-cards .demo-card-square .front, .home .notes-cards .demo-card-square .back {
+        backface-visibility: hidden;
+        left: 0;
+        position: absolute;
+        top: 0; }
+      .home .notes-cards .demo-card-square .flip-container {
+        height: 200px;
+        perspective: 1000px; }
+        .home .notes-cards .demo-card-square .flip-container:hover .flipper {
+          transform: rotateY(180deg); }
+        .home .notes-cards .demo-card-square .flip-container.hover .flipper {
+          transform: rotateY(180deg); }
+      .home .notes-cards .demo-card-square .flipper {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: .6s; }
+        .home .notes-cards .demo-card-square .flipper .home-img {
+          height: 100%;
+          width: 100%; }
+          @media only screen and (max-width: 500px) {
+            .home .notes-cards .demo-card-square .flipper .home-img {
+              width: 80%; } }
+      .home .notes-cards .demo-card-square .front {
+        box-sizing: border-box;
+        height: 200px;
+        padding: 8px;
+        transform: rotateY(0deg);
+        width: 100%;
+        z-index: 2; }
+      .home .notes-cards .demo-card-square .back {
+        box-sizing: border-box;
+        height: 200px;
+        padding: 8px;
+        transform: rotateY(180deg);
+        width: 100%; }

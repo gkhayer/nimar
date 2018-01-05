@@ -1,6 +1,6 @@
 @import '../../variables';
 
-.home {
+.home   {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -9,7 +9,7 @@
 
   @media only screen and (max-width: 500px) {
     flex-flow: row wrap;
-}
+  }
 
   .wrapper {
     display: flex;
@@ -20,24 +20,15 @@
 
     @media only screen and (max-width: 500px) {
       margin-top: 15%;
-  }
+    }
 
     .picture {
       width: 35%;
-
-      @media only screen and (max-width: 500px) {
-        //width: 100%;
-      }
-  }
+    }
 
     .textarea {
       background-color: $theme;
       border: 1px solid $gray;
-      //width: 65%;
-
-      @media only screen and (max-width: 500px) {
-       // width: 50%;
-    }
 
       p {
         font-size: 1.3rem;
@@ -51,93 +42,115 @@
         }
       }
     }
-  }
 
-  .demo-card-wide {
-    height: 100%;
-    width: 100%;
+    .demo-card-wide {
+      height: 100%;
+      width: 100%;
 
-    @media only screen and (max-width: 500px) {
-     // height: 515px;
-     // width: 465px;
-    }
-
-    .mdl-card__title {
-      background: url('../../images/placeholders/placeholder3.jpg') center / cover;
+      .mdl-card__title {
+        background: url('../../images/placeholders/placeholder3.jpg') center / cover;
+      }
     }
   }
 
+////////////////////////////////////////////////////////////////////////
   .notes-cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin: 20px 0;
+    margin-top: 20px;
     width: 100%;
 
     .flipcard {
-      flex-basis: auto;
-      flex-shrink: 1;
-      margin-bottom: 20px;
+      box-sizing: border-box;
+      width: 21%;
 
       @media only screen and (max-width: 500px) {
+        padding: 3px;
+        width: 50%;
+
         &:nth-child(3) {
           display: none;
         }
       }
     }
-  }
 
-  .home-img {
-    height: 250px;
-    width: 250px;
-  }
+    .demo-card-square {
+      width: 100%;
 
-  .demo-card-square {
-    display: inline-flex;
-
-    .quote {
-      font-size: 1rem;
-  }
-
-    %extend-1 {
-      backface-visibility: hidden;
-      left: 0;
-      position: absolute;
-      top: 0;
-    }
-
-    .flip-container {
-      height: 260px;
-      perspective: 1000px;
-
-      &:hover .flipper {
-        transform: rotateY(180deg);
+      .card-title {
+        @media only screen and (max-width: 500px) {
+          padding: 0;
+        }
       }
 
-      &.hover .flipper {
-      transform: rotateY(180deg);
-    }
-  }
+      .quote {
+        font-size: 1rem;
+        text-align: justify;
+        width: 100%;
 
-    .front {
-      @extend %extend-1;
-      height: 250px;
-      transform: rotateY(0deg);
-      width: 330px;
-      z-index: 2;
+        @media only screen and (max-width: 500px) {
+          display: none;
+        }
     }
 
-    .back {
-      @extend %extend-1;
-      height: 250px;
-      transform: rotateY(180deg);
-      width: 330px;
+      %extend-1 {
+        backface-visibility: hidden;
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+
+      .flip-container {
+        height: 200px;
+        perspective: 1000px;
+
+        @media only screen and (max-width: 500px) {
+          //height: 130px;
+        }
+
+        &:hover .flipper {
+          transform: rotateY(180deg);
+        }
+
+        &.hover .flipper {
+          transform: rotateY(180deg);
+      }
     }
 
-    .flipper {
-      position: relative;
-      transform-style: preserve-3d;
-      transition: .6s;
+      .flipper {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: .6s;
+
+        .home-img {
+          height: 100%;
+          width: 100%;
+
+          @media only screen and (max-width: 500px) {
+            width: 80%;
+          }
+        }
+      }
+
+      .front {
+        @extend %extend-1;
+        box-sizing: border-box;
+        height: 200px;
+        padding: 8px;
+        transform: rotateY(0deg);
+        width: 100%;
+        z-index: 2;
+      }
+
+      .back {
+        @extend %extend-1;
+        box-sizing: border-box;
+        height: 200px;
+        padding: 8px;
+        transform: rotateY(180deg);
+        width: 100%;
+      }
     }
   }
 }
