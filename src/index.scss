@@ -1,0 +1,21 @@
+@import 'variables';
+
+body {
+  align-items: center;
+  background-attachment: fixed;
+  background-color: $bodybackground;
+  background-image: url('./images/image1.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $black;
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+}

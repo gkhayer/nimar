@@ -15,8 +15,12 @@
   padding: 10px;
   width: 100%; }
 
-.about-text {
-  background-color: #dff2f7;
-  border: 0.5px solid #564947;
-  font-size: 1.3rem;
-  padding: 10px; }
+.footer {
+  background-color: #fff;
+  box-shadow: 0 10px 5px #888;
+  display: flex;
+  flex-flow: row wrap;
+  height: 150px;
+  justify-content: center;
+  opacity: .9;
+  width: 100%; }

@@ -1,5 +1,5 @@
 import React from 'react';
-//import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export default class Header extends React.Component {
@@ -8,9 +8,9 @@ export default class Header extends React.Component {
         return (
           <div className="header">
             <nav className="navbar">
-              <a href="#home" className="selected">Home</a>
-              <a href="#memories" className="selected">Memories</a>
-              <a href="#about" className="selected">About</a>
+              <Link to='/' className="selected">Home</Link>
+              <Link to='/memories' className="selected">Memories</Link>
+              <Link to='/about' className="selected">About</Link>
             </nav>
           </div>
         );

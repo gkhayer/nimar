@@ -1,13 +1,13 @@
 import React from 'react';
+import { Route } from 'react-router-dom'
 import Header from '../component/Header';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Memories from '../pages/Memories';
+import Footer from '../component/Footer';
 import './App.css';
 
 export default class App extends React.Component {
-
-
   constructor() {
     super();
     this.state = {
@@ -28,14 +28,13 @@ export default class App extends React.Component {
   }
 
   render() {
-    
     return (
       <div className="app">
         <Header></Header>
         <div className="container">
-          <Home></Home>
-          <Memories></Memories>
-          <About></About>
+          <Route path="/" exact component={Home} />
+          <Route path="/memories" component={Memories} />
+          <Route path="/about" component={About} />
           <div className="back-top">
             <div className="back-top-content" onClick={ () => { this.scrollToTop(); }}>
               <i id="tt2" className="material-icons arrow-upward">arrow_upward</i>
@@ -43,6 +42,7 @@ export default class App extends React.Component {
             </div>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     );
   }

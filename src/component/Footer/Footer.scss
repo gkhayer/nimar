@@ -1,0 +1,12 @@
+@import '../../variables';
+
+.footer {
+  background-color: $footercolor;
+  box-shadow: 0 10px 5px $boxshadow;
+  display: flex;
+  flex-flow: row wrap;
+  height: 150px;
+  justify-content: center;
+  opacity: .9;
+  width: 100%;
+}
