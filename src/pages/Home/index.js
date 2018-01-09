@@ -6,6 +6,14 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="home" id="home">
+        <div className="welcome-note">
+          <span>Welcome to my Website</span>
+          <p className="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris sagittis pellentesque lacus eleifend lacinia...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris sagittis pellentesque lacus eleifend lacinia...
+          </p>
+        </div>
         <div className="wrapper">
           <div className="child picture">
             <div className="demo-card-wide mdl-card mdl-shadow--2dp">

@@ -11,6 +11,20 @@
     flex-flow: row wrap;
   }
 
+  .welcome-note {
+    .welcome-text {
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      padding: 0 200px;
+
+      @media only screen and (max-width: 500px) {
+        padding: 0;
+      }
+    }
+  }
+
   .wrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -53,7 +67,6 @@
     }
   }
 
-////////////////////////////////////////////////////////////////////////
   .notes-cards {
     display: flex;
     flex-flow: row wrap;
