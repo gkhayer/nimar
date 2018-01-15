@@ -32,10 +32,14 @@ body {
   flex-wrap: nowrap;
   height: auto;
   justify-content: center;
-  margin-top: 13px;
+  margin-top: 100px;
   max-width: var(--max-content-width);
   padding: 70px 0 240px;
   width: 80%;
+
+  @media only screen and (max-width: 500px) {
+    padding: 15px 0 240px;
+  }
 }
 
 // headings
@@ -44,6 +48,6 @@ body {
   color: $gray;
   font-size: 3rem;
   padding: 10px;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   width: 100%;
 }

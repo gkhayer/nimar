@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
           <div className="footer">
             <div>This is a footer</div>
             <div className="default"></div>
-            <div clasName="summer"></div>
+            <div className="summer"></div>
             <div className="winter"></div>
             <div className="spring"></div>
             <div className="autumn"></div>

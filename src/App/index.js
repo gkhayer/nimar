@@ -4,6 +4,7 @@ import Header from '../component/Header';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Memories from '../pages/Memories';
+import Contact from '../pages/Contact';
 import Footer from '../component/Footer';
 import './App.css';
 
@@ -35,6 +36,7 @@ export default class App extends React.Component {
           <Route path="/" exact component={Home} />
           <Route path="/memories" component={Memories} />
           <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact}></Route>
           <div className="back-top">
             <div className="back-top-content" onClick={ () => { this.scrollToTop(); }}>
               <i id="tt2" className="material-icons arrow-upward">arrow_upward</i>

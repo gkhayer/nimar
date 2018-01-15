@@ -1,33 +1,27 @@
-.header {
+.navbar {
+  background-color: #dbecf1;
+  box-shadow: 0 10px 5px #888;
   display: flex;
-  flex-flow: row wrap;
   justify-content: flex-end;
-  width: 100%; }
-  .header .navbar {
-    background-color: #dbecf1;
-    box-shadow: 0 10px 5px #888;
-    display: flex;
-    justify-content: flex-end;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10; }
-    .header .navbar a {
-      color: #222;
-      margin: 0 100px;
-      padding: 50px 0;
-      text-decoration: none; }
-      @media only screen and (max-width: 500px) {
-        .header .navbar a {
-          margin: 0 38px; } }
-    @media all and (max-width: 800px) {
-      .header .navbar .navigation {
-        justify-content: space-around; } }
-    @media all and (max-width: 500px) {
-      .header .navbar .navigation {
-        flex-direction: column; } }
-    .header .navbar .selected {
-      color: #222; }
-      .header .navbar .selected:visited, .header .navbar .selected:focus, .header .navbar .selected:hover {
-        color: #564947; }
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+  @media only screen and (max-width: 500px) {
+    .navbar ul {
+      text-align: start; } }
+  .navbar a {
+    color: #222;
+    font-size: 1.7rem;
+    margin: 0 15px 0 0;
+    padding: 30px;
+    text-decoration: none; }
+    @media only screen and (max-width: 500px) {
+      .navbar a {
+        font-size: 1.5rem;
+        padding: 10px; } }
+  .navbar .selected {
+    color: #222; }
+    .navbar .selected:visited, .navbar .selected:focus, .navbar .selected:hover {
+      color: #564947; }

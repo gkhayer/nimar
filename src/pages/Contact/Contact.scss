@@ -1,0 +1,28 @@
+@import '../../variables';
+
+.contact {
+  //width: 100%;
+
+  .information {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+
+    .row {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+
+    .col {
+      box-sizing: border-box;
+      padding: 10px;
+      width: 40%;
+
+      @media only screen and (max-width: 500px) {
+        width: 50%;
+      }
+    }
+  }
+}

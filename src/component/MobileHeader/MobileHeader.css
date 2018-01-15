@@ -1,0 +1,25 @@
+.mobileheader {
+  display: flex;
+  position: relative;
+  right: 45px;
+  top: 32px;
+  z-index: 20; }
+  @media only screen and (max-width: 500px) {
+    .mobileheader {
+      height: 85px; } }
+  .mobileheader .menu {
+    position: fixed;
+    right: 40px; }
+
+.vertical-menu {
+  background-color: #fff;
+  border: 1px solid;
+  display: flex;
+  position: fixed;
+  right: 43px;
+  top: 52px; }
+  .vertical-menu a {
+    color: #222;
+    text-decoration: none; }
+  .vertical-menu li {
+    list-style: none; }

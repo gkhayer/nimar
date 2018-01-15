@@ -26,7 +26,7 @@ export default class About extends React.Component {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Mauris sagittis pellentesque lacus eleifend lacinia...
               Lorem ipsum dolor sit amet
-          </div>      
+          </div>
           <div style={{textAlign: 'center'}}>
             <span>Education</span>
           </div>

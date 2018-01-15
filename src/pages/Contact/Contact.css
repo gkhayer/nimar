@@ -1,0 +1,16 @@
+.contact .information {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%; }
+  .contact .information .row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%; }
+  .contact .information .col {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40%; }
+    @media only screen and (max-width: 500px) {
+      .contact .information .col {
+        width: 50%; } }
