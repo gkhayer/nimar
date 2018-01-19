@@ -12,6 +12,7 @@
   }
 
   .menu {
+    color: $white;
     position: fixed;
     right: 40px;
   }
@@ -22,8 +23,9 @@
   border: 1px solid;
   display: flex;
   position: fixed;
-  right: 43px;
-  top: 52px;
+  right: 0;
+  top: 85px;
+  width: 100%;
 
   a {
     color: $black;

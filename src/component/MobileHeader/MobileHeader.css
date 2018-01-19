@@ -8,16 +8,18 @@
     .mobileheader {
       height: 85px; } }
   .mobileheader .menu {
+    color: #fff;
     position: fixed;
     right: 40px; }
 
 .vertical-menu {
-  background-color: #fff;
+  background-color: #2c3531;
   border: 1px solid;
   display: flex;
   position: fixed;
-  right: 43px;
-  top: 52px; }
+  right: 0;
+  top: 85px;
+  width: 100%; }
   .vertical-menu a {
     color: #222;
     text-decoration: none; }

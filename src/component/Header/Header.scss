@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .navbar {
-  background-color: $header-gray;
+  background-color: $footercolor;
   box-shadow: 0 10px 5px $boxshadow;
   display: flex;
   justify-content: flex-end;
@@ -13,6 +13,8 @@
 
   ul {
     @media only screen and (max-width: 500px) {
+      box-sizing: border-box;
+      padding: 10px;
       text-align: start;
     }
   }
@@ -36,7 +38,7 @@
     &:visited,
     &:focus,
     &:hover {
-      color: $gray;
+      color: $white;
     }
   }
 }

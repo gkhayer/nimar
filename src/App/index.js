@@ -34,6 +34,7 @@ export default class App extends React.Component {
         <Header></Header>
         <div className="container">
           <Route path="/" exact component={Home} />
+          <Route path="/home" component={Home} />
           <Route path="/memories" component={Memories} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact}></Route>
