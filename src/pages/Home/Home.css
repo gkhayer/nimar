@@ -11,8 +11,7 @@
     box-sizing: border-box;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
-    padding: 0 200px; }
+    justify-content: space-evenly; }
     @media only screen and (max-width: 500px) {
       .home .welcome-note .welcome-text {
         padding: 0; } }
@@ -64,7 +63,9 @@
         .home .notes-cards .demo-card-square .card-title {
           padding: 0; } }
       .home .notes-cards .demo-card-square .quote {
+        box-sizing: border-box;
         font-size: 1rem;
+        padding: 10px;
         text-align: justify;
         width: 100%; }
         @media only screen and (max-width: 500px) {

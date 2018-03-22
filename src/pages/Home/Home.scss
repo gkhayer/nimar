@@ -17,7 +17,7 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-evenly;
-      padding: 0 200px;
+      //padding: 0 200px;
 
       @media only screen and (max-width: 500px) {
         padding: 0;
@@ -98,7 +98,9 @@
       }
 
       .quote {
+        box-sizing: border-box;
         font-size: 1rem;
+        padding: 10px;
         text-align: justify;
         width: 100%;
 
