@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
-import './pagination.css';
+import './Pagination.css';
 
 const propTypes = {
     items: PropTypes.array.isRequired,
