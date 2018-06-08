@@ -51,3 +51,13 @@ body {
   //text-transform: uppercase;
   width: 100%;
 }
+
+//buttons
+
+.button {
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px $gray-1;
+  font-size: 15px;
+  font-weight: 600;
+  height: 36px;
+}

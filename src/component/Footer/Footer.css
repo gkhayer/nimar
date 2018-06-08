@@ -4,9 +4,15 @@
   box-shadow: 0 10px 5px #888;
   color: #fff;
   display: flex;
-  flex-flow: row wrap;
   height: 150px;
   justify-content: center;
   opacity: .9;
+  padding: 15px;
   position: absolute;
   width: 100%; }
+
+.button {
+  background-color: #dab659;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }

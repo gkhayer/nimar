@@ -14,7 +14,7 @@
       padding: 10px;
       text-align: start; } }
   .navbar a {
-    color: #222;
+    color: #fff;
     font-size: 1.7rem;
     margin: 0 15px 0 0;
     padding: 30px;
@@ -24,6 +24,6 @@
         font-size: 1.5rem;
         padding: 10px; } }
   .navbar .selected {
-    color: #222; }
-    .navbar .selected:visited, .navbar .selected:focus, .navbar .selected:hover {
-      color: #fff; }
+    color: #fff; }
+    .navbar .selected:visited, .navbar .selected:focus, .navbar .selected:hover, .navbar .selected:active {
+      text-decoration: underline; }
