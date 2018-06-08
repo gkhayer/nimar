@@ -12,6 +12,8 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly; }
+    .home .welcome-note .welcome-text a {
+      display: contents; }
     @media only screen and (max-width: 500px) {
       .home .welcome-note .welcome-text {
         padding: 0; } }

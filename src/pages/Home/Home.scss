@@ -17,7 +17,10 @@
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-evenly;
-      //padding: 0 200px;
+
+      a {
+        display: contents;
+      }
 
       @media only screen and (max-width: 500px) {
         padding: 0;
@@ -121,7 +124,6 @@
         perspective: 1000px;
 
         @media only screen and (max-width: 500px) {
-          //height: 130px;
         }
 
         &:hover .flipper {

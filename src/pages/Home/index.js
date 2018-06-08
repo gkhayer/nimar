@@ -6,31 +6,25 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="home" id="home">
-        <div className="welcome-note">
-          <span>Welcome to my Website</span>
-          <p className="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Mauris sagittis pellentesque lacus eleifend lacinia...
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Mauris sagittis pellentesque lacus eleifend lacinia...
-          </p>
-        </div>
         <div className="wrapper">
           <div className="child picture">
             <div className="demo-card-wide mdl-card mdl-shadow--2dp">
               <div className="mdl-card__title mdl-card--expand"></div>
               <div className="mdl-card__actions">
-                <span className="demo-card-image__filename">some text</span>
+                <span className="demo-card-image__filename">
+                  <i style={{'color': '#ff00007a'}} className="material-icons">mood</i>
+                  <i style={{'color': '#0080006e'}} className="material-icons">mood</i>
+                  <i style={{'color': '#00b7ff'}} className="material-icons">mood</i>                  
+                </span>
               </div>
             </div>
           </div>
-          <div className="child textarea">
-            <p>You're my Happy</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris sagittis pellentesque lacus eleifend lacinia...
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris sagittis pellentesque lacus eleifend lacinia...
-                Lorem ipsum dolor sit amet
-            </p>
+          <div className="child textarea welcome-note">
+            <p>Welcome</p>
+            <p className="welcome-text">Hi, my name is Gagan K. Hayer.I design engaging websites.
+            This website is personal website for beautiful neice. I am an easy to work with person.
+            you can learn more about me on <a href="/about">About</a> page.
+          </p>
           </div>
         </div>
 
