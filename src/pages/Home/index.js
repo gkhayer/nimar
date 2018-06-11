@@ -14,7 +14,7 @@ export default class Home extends React.Component {
                 <span className="demo-card-image__filename">
                   <i style={{'color': '#ff00007a'}} className="material-icons">mood</i>
                   <i style={{'color': '#0080006e'}} className="material-icons">mood</i>
-                  <i style={{'color': '#00b7ff'}} className="material-icons">mood</i>                  
+                  <i style={{'color': '#00b7ff'}} className="material-icons">mood</i>
                 </span>
               </div>
             </div>
@@ -22,7 +22,7 @@ export default class Home extends React.Component {
           <div className="child textarea welcome-note">
             <p>Welcome</p>
             <p className="welcome-text">Hi, my name is Gagan K. Hayer.I design engaging websites.
-            This website is personal website for beautiful neice. I am an easy to work with person.
+            blah...blah....bhal....blah...blah....bhal....blah...blah....bhal....blah...
             you can learn more about me on <a href="/about">About</a> page.
           </p>
           </div>
@@ -40,10 +40,10 @@ export default class Home extends React.Component {
                   <div className="flip-container">
                     <div className="flipper">
                       <div className="front">
-                        <img className="home-img" src={value.imagefront} alt={value.timeline}/>
+                        <div className="img-wrapper"><img className="home-img" src={value.imagefront} alt={value.timeline}/></div>
                       </div>
                       <div className="back">
-                        <img className="home-img" src={value.imageback} alt={value.timeline}/>
+                        <div className="img-wrapper"><img className="home-img" src={value.imageback} alt={value.timeline}/></div>
                       </div>
                     </div>
                   </div>

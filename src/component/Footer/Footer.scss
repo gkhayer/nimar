@@ -12,10 +12,16 @@
   padding: 15px;
   position: absolute;
   width: 100%;
+
+  .footerwrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
 }
 
 .button {
-  background-color: $gold;
+  background-color: $theme;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;

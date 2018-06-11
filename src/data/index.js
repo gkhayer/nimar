@@ -6,14 +6,14 @@ const home = [
     quote: 'Your First Breath Took Ours Away'
   },
   {
-    imagefront: 'assets/images/babies/baby6.jpg',
-    imageback: 'assets/images/babies/baby7.jpg',
+    imagefront: 'assets/images/nimar-new/IMG_7144.JPG',
+    imageback: 'assets/images/nimar-new/image14.jpg',
     timeline: '3 Months',
     quote: '14 Lbs 3 Oz Holds head steady Slept 8.5 hours'
   },
   {
-    imagefront: 'assets/images/babies/baby3.jpg',
-    imageback: 'assets/images/babies/baby1.jpg',
+    imagefront: 'assets/images/nimar-new/IMG_7680.JPG',
+    imageback: 'assets/images/nimar-new/IMG_1550.PNG',
     timeline: '6 Months',
     quote: 'I will be as Useless as the "G" in Lasagna'
   }

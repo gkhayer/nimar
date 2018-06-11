@@ -1,0 +1,46 @@
+@import '../../variables';
+
+.navbar {
+  background-color: $footercolor;
+  box-shadow: 0 10px 5px $boxshadow;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  ul {
+    @media only screen and (max-width: 500px) {
+      box-sizing: border-box;
+      padding: 10px;
+      text-align: start;
+    }
+  }
+
+  a {
+    color: $white;
+    font-size: 1.7rem;
+    margin: 0 15px 0 0;
+    padding: 30px;
+    text-decoration: none;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  }
+
+  .selected {
+    color: $white;
+
+    &:visited,
+    &:focus,
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+

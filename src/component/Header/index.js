@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MobileHeader from '../MobileHeader';
+import NavBar from '../NavBar';
 import './Header.css';
 
 export default class Header extends React.Component {
@@ -35,12 +36,7 @@ export default class Header extends React.Component {
         );
       } else {
       return (
-        <nav className="navbar">
-          <Link to='/home' className="selected">Home</Link>
-          <Link to='/memories' className="selected">Memories</Link>
-          <Link to='/about' className="selected">About</Link>
-          <Link to='/contact' className="selected">Contact</Link>
-        </nav>
+        <NavBar />
       );
     }
   }

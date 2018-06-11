@@ -10,9 +10,13 @@
   padding: 15px;
   position: absolute;
   width: 100%; }
+  .footer .footerwrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between; }
 
 .button {
-  background-color: #dab659;
+  background-color: #dff2f7;
   display: flex;
   flex-flow: column wrap;
   justify-content: center; }
