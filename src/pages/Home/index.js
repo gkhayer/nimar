@@ -40,10 +40,10 @@ export default class Home extends React.Component {
                   <div className="flip-container">
                     <div className="flipper">
                       <div className="front">
-                        <div className="img-wrapper"><img className="home-img" src={value.imagefront} alt={value.timeline}/></div>
+                        <img className="home-img" src={value.imagefront} alt={value.timeline}/>
                       </div>
                       <div className="back">
-                        <div className="img-wrapper"><img className="home-img" src={value.imageback} alt={value.timeline}/></div>
+                        <img className="home-img" src={value.imageback} alt={value.timeline}/>
                       </div>
                     </div>
                   </div>

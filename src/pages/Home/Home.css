@@ -8,10 +8,7 @@
     .home {
       flex-flow: row wrap; } }
   .home .welcome-note .welcome-text {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly; }
+    box-sizing: border-box; }
     .home .welcome-note .welcome-text a {
       display: contents; }
     @media only screen and (max-width: 500px) {
@@ -28,15 +25,23 @@
         margin-top: 15%; } }
     .home .wrapper .picture {
       width: 35%; }
+      @media only screen and (max-width: 500px) {
+        .home .wrapper .picture {
+          display: none; } }
     .home .wrapper .textarea {
       background-color: #dff2f7;
-      border: 0.5px solid #c7c7c7; }
+      border: 0.5px solid #c7c7c7;
+      width: 85%; }
+      @media only screen and (max-width: 500px) {
+        .home .wrapper .textarea {
+          width: 100%; } }
       .home .wrapper .textarea p {
         font-size: 1.3rem;
         letter-spacing: 0;
         line-height: 2rem;
         margin: 0 0 16px;
-        padding: 10px; }
+        padding: 10px;
+        word-break: break-word; }
         .home .wrapper .textarea p:first-child {
           color: #564947; }
     .home .wrapper .demo-card-wide {
@@ -51,59 +56,60 @@
     margin-top: 20px;
     width: 100%; }
     .home .notes-cards .flipcard {
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      width: 21%; }
       @media only screen and (max-width: 500px) {
         .home .notes-cards .flipcard {
           padding: 3px;
           width: 50%; }
           .home .notes-cards .flipcard:nth-child(3) {
             display: none; } }
-    @media only screen and (max-width: 500px) {
-      .home .notes-cards .demo-card-square .card-title {
-        padding: 0; } }
-    .home .notes-cards .demo-card-square .quote {
-      box-sizing: border-box;
-      font-size: 1rem;
-      padding: 10px;
-      text-align: justify;
+    .home .notes-cards .demo-card-square {
       width: 100%; }
       @media only screen and (max-width: 500px) {
-        .home .notes-cards .demo-card-square .quote {
-          display: none; } }
-    .home .notes-cards .demo-card-square .front, .home .notes-cards .demo-card-square .back {
-      backface-visibility: hidden;
-      left: 0;
-      position: absolute;
-      top: 0; }
-    .home .notes-cards .demo-card-square .flip-container {
-      perspective: 1000px; }
-      .home .notes-cards .demo-card-square .flip-container:hover .flipper {
-        transform: rotateY(180deg); }
-      .home .notes-cards .demo-card-square .flip-container.hover .flipper {
-        transform: rotateY(180deg); }
-    .home .notes-cards .demo-card-square .flipper {
-      position: relative;
-      transform-style: preserve-3d;
-      transition: .6s; }
-      .home .notes-cards .demo-card-square .flipper .home-img {
-        bottom: 0;
-        position: absolute;
-        right: 0;
+        .home .notes-cards .demo-card-square .card-title {
+          padding: 0; } }
+      .home .notes-cards .demo-card-square .quote {
+        box-sizing: border-box;
+        font-size: 1rem;
+        padding: 10px;
+        text-align: justify;
         width: 100%; }
         @media only screen and (max-width: 500px) {
-          .home .notes-cards .demo-card-square .flipper .home-img {
-            width: 80%; } }
-    .home .notes-cards .demo-card-square .front {
-      box-sizing: border-box;
-      padding: 8px;
-      transform: rotateY(0deg);
-      width: 100%;
-      z-index: 2; }
-    .home .notes-cards .demo-card-square .back {
-      box-sizing: border-box;
-      padding: 8px;
-      transform: rotateY(180deg);
-      width: 100%; }
-    .home .notes-cards .demo-card-square .img-wrapper {
-      height: 100px;
-      position: relative; }
+          .home .notes-cards .demo-card-square .quote {
+            display: none; } }
+      .home .notes-cards .demo-card-square .front, .home .notes-cards .demo-card-square .back {
+        backface-visibility: hidden;
+        left: 0;
+        position: absolute;
+        top: 0; }
+      .home .notes-cards .demo-card-square .flip-container {
+        height: 200px;
+        perspective: 1000px; }
+        .home .notes-cards .demo-card-square .flip-container:hover .flipper {
+          transform: rotateY(180deg); }
+        .home .notes-cards .demo-card-square .flip-container.hover .flipper {
+          transform: rotateY(180deg); }
+      .home .notes-cards .demo-card-square .flipper {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: .6s; }
+        .home .notes-cards .demo-card-square .flipper .home-img {
+          height: 100%;
+          width: 100%; }
+          @media only screen and (max-width: 500px) {
+            .home .notes-cards .demo-card-square .flipper .home-img {
+              width: 80%; } }
+      .home .notes-cards .demo-card-square .front {
+        box-sizing: border-box;
+        height: 200px;
+        padding: 8px;
+        transform: rotateY(0deg);
+        width: 100%;
+        z-index: 2; }
+      .home .notes-cards .demo-card-square .back {
+        box-sizing: border-box;
+        height: 200px;
+        padding: 8px;
+        transform: rotateY(180deg);
+        width: 100%; }
