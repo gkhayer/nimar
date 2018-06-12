@@ -75,7 +75,7 @@
         padding: 10px;
         text-align: justify;
         width: 100%; }
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 991.98px) {
           .home .notes-cards .demo-card-square .quote {
             display: none; } }
       .home .notes-cards .demo-card-square .front, .home .notes-cards .demo-card-square .back {
