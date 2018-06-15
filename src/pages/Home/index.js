@@ -3,6 +3,7 @@ import {home} from '../../data';
 import './Home.css';
 
 export default class Home extends React.Component {
+  
   render() {
     return (
       <div className="home" id="home">
@@ -34,16 +35,13 @@ export default class Home extends React.Component {
             return (
               <div key={`home${idx}`} className="flipcard">
                 <div className="demo-card-square mdl-card mdl-shadow--2dp">
-                  <div className="mdl-card__title mdl-card--expand card-title">
-                    <i style={{'color': 'pink'}} className="material-icons heart">favorite</i>
-                  </div>
                   <div className="flip-container">
                     <div className="flipper">
                       <div className="front">
                         <img className="home-img" src={value.imagefront} alt={value.timeline}/>
                       </div>
                       <div className="back">
-                        <img className="home-img" src={value.imageback} alt={value.timeline}/>
+                        <a href={value.address}><button className="button">{value.backbutton}</button></a>
                       </div>
                     </div>
                   </div>

@@ -1,21 +1,21 @@
 const home = [
   {
     imagefront: 'assets/images/babies/img1.jpg',
-    imageback: 'assets/images/babies/img3.jpg',
-    timeline: '1st Day',
-    quote: 'Your First Breath Took Ours Away'
+    backbutton: 'Resume',
+    address: '/about',
+    quote: 'Resume'
   },
   {
     imagefront: 'assets/images/nimar-new/IMG_7144.JPG',
-    imageback: 'assets/images/nimar-new/image14.jpg',
-    timeline: '3 Months',
-    quote: '14 Lbs 3 Oz Holds head steady Slept 8.5 hours'
+    backbutton: 'Education',
+    address: '/about',
+    quote: 'Education'
   },
   {
     imagefront: 'assets/images/nimar-new/IMG_7680.JPG',
-    imageback: 'assets/images/nimar-new/IMG_1550.PNG',
-    timeline: '6 Months',
-    quote: 'I will be as Useless as the "G" in Lasagna'
+    backbutton: 'Certification',
+    address: '/about',
+    quote: 'Certification'
   }
 ];
 

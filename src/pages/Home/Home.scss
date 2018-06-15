@@ -170,7 +170,9 @@
       .back {
         @extend %extend-1;
         box-sizing: border-box;
+        display: flex;
         height: 200px;
+        justify-content: center;
         padding: 8px;
         transform: rotateY(180deg);
         width: 100%;
