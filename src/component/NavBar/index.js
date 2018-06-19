@@ -1,18 +1,9 @@
 import React from 'react';
+import {routes} from '../../data';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 
-
 export default class NavBar extends React.Component {
-
-  constructor() {
-    super();
-    this.toggleLinks = this.toggleLinks.bind(this);
-
-    this.state = {
-      getInitialState: false
-    }
-  }
 
   toggleLinks = () => {
     console.log("closed");
@@ -21,13 +12,17 @@ export default class NavBar extends React.Component {
     }
   }
 
-  render(){
+  render() {
     return (
-      <nav className="navbar" onClick={this.toggleLinks}>
-        <Link to='/home' className="selected">Home</Link>
-        <Link to='/memories' className="selected">Memories</Link>
-        <Link to='/about' className="selected">About</Link>
-        <Link to='/contact' className="selected">Contact</Link>
+      <nav className="navbar">
+        {
+          routes.map((value, key) => {
+            return (
+              <span key={`routes${key}`}>
+                <Link to={value.path} className="selected">{value.name}</Link>
+              </span>
+            )})
+        }
       </nav>
     );
   }

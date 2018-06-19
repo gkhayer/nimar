@@ -1,4 +1,5 @@
 import React from 'react';
+import {routes} from '../../data';
 import { Link } from 'react-router-dom';
 import './MobileHeader.css';
 
@@ -29,10 +30,15 @@ class ListItems extends React.Component{
       return(
         <div className="vertical-menu">
           <ul>
-            <li><Link to='/' className="selected">Home</Link></li>
-            <li><Link to='/memories' className="selected">Memories</Link></li>
-            <li><Link to='/about' className="selected">About</Link></li>
-            <li><Link to='/contact' className="selected">Contact</Link></li>
+          {
+            routes.map((value, idy) => {
+              return (
+                <li key={`mobileroute${idy}`}>
+                  <Link to={value.path} className="selected">{value.name}</Link>
+                </li>
+              )
+            })
+          }
           </ul>
         </div>
       )

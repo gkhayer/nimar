@@ -64,16 +64,16 @@ const memories = [
     image: 'assets/images/nimar/image.jpg',
     timeline: '1'
   },
-  { 
+  {
     image: 'https://source.unsplash.com/zh7GEuORbUw/600x799',
     timeline: '2'
   },
   {
-    image: 'assets/images/nimar/image28.jpg',  
+    image: 'assets/images/nimar/image28.jpg',
     timeline: '3'
   },
   {
-    image: 'assets/images/nimar/image4.jpg', 
+    image: 'assets/images/nimar/image4.jpg',
     timeline: '4'
   },
   {
@@ -81,10 +81,10 @@ const memories = [
     timeline: '5'
   },
   {
-    image: 'assets/images/nimar/image8.jpg',  
+    image: 'assets/images/nimar/image8.jpg',
     timeline: '6'
   },
-  { 
+  {
     image: 'https://source.unsplash.com/NQSWvyVRIJk/800x599',
     timeline: '7'
   },
@@ -100,7 +100,7 @@ const memories = [
     image: 'assets/images/nimar/image19.jpg',
     timeline: '10'
   },
-  { 
+  {
     image: 'https://source.unsplash.com/Dm-qxdynoEc/800x799',
     timeline: '11'
   },
@@ -112,7 +112,7 @@ const memories = [
     image: 'assets/images/nimar/image21.jpg',
     timeline: '13'
   },
-  { 
+  {
     image: 'https://source.unsplash.com/PpOHJezOalU/800x599',
     timeline: '14'
   },
@@ -128,7 +128,7 @@ const memories = [
     image: 'assets/images/nimar/image32.jpg',
     timeline: '17'
   },
-  { 
+  {
     image: 'https://source.unsplash.com/epcsn8Ed8kY/600x799',
     timeline: '18'
   },
@@ -190,7 +190,29 @@ const memories = [
   }
 ];
 
+
+const routes = [
+  {
+    name: 'Home',
+    path: '/home'
+  },
+  {
+    name: 'Memories',
+    path: '/memories'
+  },
+  {
+    name: 'About',
+    path: '/about'
+  },
+  {
+    name: 'Contact',
+    path: '/contact'
+  },
+];
+
+
 export {
   home,
-  memories
-}; 
+  memories,
+  routes
+};
