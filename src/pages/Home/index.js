@@ -3,7 +3,7 @@ import {home} from '../../data';
 import './Home.css';
 
 export default class Home extends React.Component {
-  
+
   render() {
     return (
       <div className="home" id="home">
@@ -41,7 +41,7 @@ export default class Home extends React.Component {
                         <img className="home-img" src={value.imagefront} alt={value.timeline}/>
                       </div>
                       <div className="back">
-                        <a href={value.address}><button className="button">{value.backbutton}</button></a>
+                        <button className="button myinfo"><a href={value.address}>{value.backbutton}</a></button>
                       </div>
                     </div>
                   </div>
