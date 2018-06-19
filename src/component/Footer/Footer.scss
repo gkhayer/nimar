@@ -18,12 +18,19 @@
     flex-flow: column wrap;
     justify-content: space-between;
   }
+
+  .footer-nav {
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  .button {
+    background-color: $theme;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
 }
 
-.button {
-  background-color: $theme;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-}
 

@@ -5,13 +5,6 @@ import './Navbar.css';
 
 export default class NavBar extends React.Component {
 
-  toggleLinks = () => {
-    console.log("closed");
-    this.setState = {
-      getInitialState: true
-    }
-  }
-
   render() {
     return (
       <nav className="navbar">

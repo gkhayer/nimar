@@ -14,9 +14,11 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between; }
-
-.button {
-  background-color: #dff2f7;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center; }
+  @media only screen and (max-width: 500px) {
+    .footer .footer-nav {
+      display: none; } }
+  .footer .button {
+    background-color: #dff2f7;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; }
