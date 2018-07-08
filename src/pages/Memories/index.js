@@ -1,7 +1,7 @@
 import React from 'react';
 import './memories.css';
 import {memories} from '../../data';
-import Pagination from '../../component/Pagination';
+import Pagination from '../../component/pagination';
 
 export default class Memories extends React.Component {
   constructor() {
