@@ -22,7 +22,7 @@
     color: $white;
     font-size: 1.7rem;
     margin: 0 15px 0 0;
-    padding: 30px;
+    padding: 0 30px;
     text-decoration: none;
 
     @media only screen and (max-width: 500px) {
@@ -40,6 +40,10 @@
     &:active {
       text-decoration: underline;
     }
+  }
+
+  .nav-span {
+    padding: 30px;
   }
 }
 

@@ -11,7 +11,7 @@ export default class NavBar extends React.Component {
         {
           routes.map((value, key) => {
             return (
-              <span key={`routes${key}`}>
+              <span className="nav-span" key={`routes${key}`}>
                 <Link to={value.path} className="selected">{value.name}</Link>
               </span>
             )})
