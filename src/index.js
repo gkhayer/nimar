@@ -5,7 +5,7 @@ import App from './App';
 import './index.css';
 
 render(
-  <BrowserRouter>
+  <BrowserRouter basename='/nimar/'>
     <App />
   </BrowserRouter>,
   document.getElementById('root'));
