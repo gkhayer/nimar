@@ -5,6 +5,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: -100px;
   width: 100%;
 
   @media only screen and (max-width: 500px) {
@@ -42,11 +43,16 @@
       @media only screen and (max-width: 500px) {
         display: none;
       }
+
+      .mdl-shadow--2dp {
+        box-shadow: none;
+      }
     }
 
     .textarea {
       background-color: $theme;
       border: .5px solid $gray-3;
+      border-left: 0;
       width: 85%;
 
       @media only screen and (max-width: 500px) {
@@ -72,7 +78,7 @@
       width: 100%;
 
       .mdl-card__title {
-        background: url('../../images/placeholders/placeholder3.jpg') center / cover;
+        background: url('../../images/background/bk16.jpg') center / cover;
       }
     }
   }

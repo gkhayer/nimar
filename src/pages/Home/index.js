@@ -11,13 +11,6 @@ export default class Home extends React.Component {
           <div className="child picture">
             <div className="demo-card-wide mdl-card mdl-shadow--2dp">
               <div className="mdl-card__title mdl-card--expand"></div>
-              <div className="mdl-card__actions">
-                <span className="demo-card-image__filename">
-                  <i style={{'color': '#ff00007a'}} className="material-icons">mood</i>
-                  <i style={{'color': '#0080006e'}} className="material-icons">mood</i>
-                  <i style={{'color': '#00b7ff'}} className="material-icons">mood</i>
-                </span>
-              </div>
             </div>
           </div>
           <div className="child textarea welcome-note">

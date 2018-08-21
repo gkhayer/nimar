@@ -3,6 +3,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: -100px;
   width: 100%; }
   @media only screen and (max-width: 500px) {
     .home {
@@ -28,9 +29,12 @@
       @media only screen and (max-width: 500px) {
         .home .wrapper .picture {
           display: none; } }
+      .home .wrapper .picture .mdl-shadow--2dp {
+        box-shadow: none; }
     .home .wrapper .textarea {
       background-color: #d7ddea;
       border: 0.5px solid #c7c7c7;
+      border-left: 0;
       width: 85%; }
       @media only screen and (max-width: 500px) {
         .home .wrapper .textarea {
@@ -48,7 +52,7 @@
       height: 100%;
       width: 100%; }
       .home .wrapper .demo-card-wide .mdl-card__title {
-        background: url("../../images/placeholders/placeholder3.jpg") center/cover; }
+        background: url("../../images/background/bk16.jpg") center/cover; }
   .home .notes-cards {
     display: flex;
     flex-flow: row wrap;

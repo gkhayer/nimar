@@ -6,13 +6,13 @@ const home = [
     quote: 'Resume'
   },
   {
-    imagefront: 'assets/images/nimar-new/IMG_7144.JPG',
+    imagefront: 'assets/images/background/bk26.jpg',
     backbutton: 'Education',
     address: '/about',
     quote: 'Education'
   },
   {
-    imagefront: 'assets/images/nimar-new/IMG_7680.JPG',
+    imagefront: 'assets/images/nimar/image63.JPG',
     backbutton: 'Certification',
     address: '/about',
     quote: 'Certification'
