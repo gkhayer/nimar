@@ -29,7 +29,7 @@
         .home .wrapper .picture {
           display: none; } }
     .home .wrapper .textarea {
-      background-color: #dff2f7;
+      background-color: #d7ddea;
       border: 0.5px solid #c7c7c7;
       width: 85%; }
       @media only screen and (max-width: 500px) {
@@ -70,7 +70,7 @@
           .home .notes-cards .flipcard:nth-child(3) {
             display: none; } }
       .home .notes-cards .flipcard .demo-card-square {
-        background-color: #dff2f7; }
+        background-color: #d7ddea; }
       .home .notes-cards .flipcard .mdl-shadow--2dp {
         box-shadow: none; }
       .home .notes-cards .flipcard .myinfo {

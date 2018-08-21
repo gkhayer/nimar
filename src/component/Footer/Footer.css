@@ -6,7 +6,6 @@
   display: flex;
   height: 150px;
   justify-content: center;
-  opacity: .9;
   padding: 15px;
   position: absolute;
   width: 100%; }
@@ -18,7 +17,7 @@
     .footer .footer-nav {
       display: none; } }
   .footer .button {
-    background-color: #dff2f7;
+    background-color: #d7ddea;
     display: flex;
     flex-flow: column wrap;
     justify-content: center; }

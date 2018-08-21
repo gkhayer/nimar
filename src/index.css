@@ -2,7 +2,7 @@ body {
   align-items: center;
   background-attachment: fixed;
   background-color: #ededee;
-  background-image: url("./images/image1.gif");
+  background-image: url("./images/background/bk28.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #222;
@@ -22,7 +22,7 @@ body {
 
 .container {
   align-items: center;
-  background-color: #dff2f7;
+  background-color: #d7ddea;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
