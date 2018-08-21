@@ -56,62 +56,54 @@
     margin-top: 20px;
     width: 100%; }
     .home .notes-cards .flipcard {
-      box-sizing: border-box;
-      width: 21%; }
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+      width: 25%; }
       @media only screen and (max-width: 500px) {
         .home .notes-cards .flipcard {
           padding: 3px;
-          width: 50%; }
+          width: 100%; }
           .home .notes-cards .flipcard:nth-child(3) {
             display: none; } }
-    .home .notes-cards .demo-card-square {
-      width: 100%; }
-      @media only screen and (max-width: 500px) {
-        .home .notes-cards .demo-card-square .card-title {
-          padding: 0; } }
-      .home .notes-cards .demo-card-square .quote {
-        box-sizing: border-box;
-        font-size: 1rem;
-        padding: 10px;
-        text-align: justify;
-        width: 100%; }
-        @media only screen and (max-width: 991.98px) {
-          .home .notes-cards .demo-card-square .quote {
-            display: none; } }
-      .home .notes-cards .demo-card-square .front, .home .notes-cards .demo-card-square .back {
-        backface-visibility: hidden;
+      .home .notes-cards .flipcard .demo-card-square {
+        background-color: #dff2f7; }
+      .home .notes-cards .flipcard .mdl-shadow--2dp {
+        box-shadow: none; }
+      .home .notes-cards .flipcard .myinfo {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        border: 1px solid #fff;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px 40px; }
+      .home .notes-cards .flipcard .home-address {
+        bottom: 50px;
+        color: inherit;
         left: 0;
         position: absolute;
-        top: 0; }
-      .home .notes-cards .demo-card-square .flip-container {
-        height: 200px;
-        perspective: 1000px; }
-        .home .notes-cards .demo-card-square .flip-container:hover .flipper {
-          transform: rotateY(180deg); }
-        .home .notes-cards .demo-card-square .flip-container.hover .flipper {
-          transform: rotateY(180deg); }
-      .home .notes-cards .demo-card-square .flipper {
-        position: relative;
-        transform-style: preserve-3d;
-        transition: .6s; }
-        .home .notes-cards .demo-card-square .flipper .home-img {
-          height: 100%;
-          width: 100%; }
-          @media only screen and (max-width: 500px) {
-            .home .notes-cards .demo-card-square .flipper .home-img {
-              width: 80%; } }
-      .home .notes-cards .demo-card-square .front {
-        box-sizing: border-box;
-        height: 200px;
-        padding: 8px;
-        transform: rotateY(0deg);
-        width: 100%;
-        z-index: 2; }
-      .home .notes-cards .demo-card-square .back {
-        box-sizing: border-box;
-        display: flex;
-        height: 200px;
-        justify-content: center;
-        padding: 8px;
-        transform: rotateY(180deg);
-        width: 100%; }
+        right: 0;
+        text-decoration: none; }
+    @media only screen and (max-width: 500px) {
+      .home .notes-cards .demo-card-square .card-title {
+        padding: 0; } }
+    .home .notes-cards .demo-card-square .quote {
+      box-sizing: border-box;
+      font-size: 1rem;
+      padding: 10px;
+      text-align: justify;
+      width: 100%; }
+      @media only screen and (max-width: 991.98px) {
+        .home .notes-cards .demo-card-square .quote {
+          display: none; } }
+    .home .notes-cards .demo-card-square .home-img {
+      border-radius: 200px;
+      cursor: pointer;
+      height: 248px;
+      margin: 0 auto;
+      opacity: .5;
+      width: 248px; }

@@ -33,7 +33,7 @@ class ListItems extends React.Component{
           {
             routes.map((value, idy) => {
               return (
-                <li key={`mobileroute${idy}`}>
+                <li onClick={this.handleClick} key={`mobileroute${idy}`}>
                   <Link to={value.path} className="selected">{value.name}</Link>
                 </li>
               )

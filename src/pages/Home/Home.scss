@@ -85,21 +85,53 @@
     width: 100%;
 
     .flipcard {
-      box-sizing: border-box;
-      width: 21%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+      width: 25%;
 
       @media only screen and (max-width: 500px) {
         padding: 3px;
-        width: 50%;
+        width: 100%;
 
         &:nth-child(3) {
           display: none;
         }
       }
+
+      .demo-card-square {
+        background-color: #dff2f7;
+      }
+
+      .mdl-shadow--2dp {
+        box-shadow: none;
+      }
+
+      .myinfo {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        border: 1px solid $white;
+        color: $white;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px 40px;
+      }
+
+      .home-address {
+        bottom: 50px;
+        color: inherit;
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-decoration: none;
+      }
     }
 
     .demo-card-square {
-      width: 100%;
+      //width: 100%;
 
       .card-title {
         @media only screen and (max-width: 500px) {
@@ -126,56 +158,18 @@
         top: 0;
       }
 
-      .flip-container {
-        height: 200px;
-        perspective: 1000px;
+
+      .home-img {
+        border-radius: 200px;
+        cursor: pointer;
+        height: 248px;
+        margin: 0 auto;
+        opacity: .5;
+        width: 248px;
 
         @media only screen and (max-width: 500px) {
+          //width: 80%;
         }
-
-        &:hover .flipper {
-          transform: rotateY(180deg);
-        }
-
-        &.hover .flipper {
-          transform: rotateY(180deg);
-      }
-    }
-
-      .flipper {
-        position: relative;
-        transform-style: preserve-3d;
-        transition: .6s;
-
-        .home-img {
-          height: 100%;
-          width: 100%;
-
-          @media only screen and (max-width: 500px) {
-            width: 80%;
-          }
-        }
-      }
-
-      .front {
-        @extend %extend-1;
-        box-sizing: border-box;
-        height: 200px;
-        padding: 8px;
-        transform: rotateY(0deg);
-        width: 100%;
-        z-index: 2;
-      }
-
-      .back {
-        @extend %extend-1;
-        box-sizing: border-box;
-        display: flex;
-        height: 200px;
-        justify-content: center;
-        padding: 8px;
-        transform: rotateY(180deg);
-        width: 100%;
       }
     }
   }

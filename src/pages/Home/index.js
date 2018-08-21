@@ -22,10 +22,7 @@ export default class Home extends React.Component {
           </div>
           <div className="child textarea welcome-note">
             <p>Welcome</p>
-            <p className="welcome-text">Hi, my name is Gagan K. Hayer.I design engaging websites.
-            blah...blah....bhal....blah...blah....bhal....blah...blah....bhal....blah...
-            you can learn more about me on <a href="/about">About</a> page.
-          </p>
+            <p className="welcome-text">Hi, my name is Gagan K. Hayer.I design engaging websites.You can learn more about me on <a href="/about">About</a> page.</p>
           </div>
         </div>
 
@@ -35,18 +32,8 @@ export default class Home extends React.Component {
             return (
               <div key={`home${idx}`} className="flipcard">
                 <div className="demo-card-square mdl-card mdl-shadow--2dp">
-                  <div className="flip-container">
-                    <div className="flipper">
-                      <div className="front">
-                        <img className="home-img" src={value.imagefront} alt={value.timeline}/>
-                      </div>
-                      <div className="back">
-                        <button className="button myinfo"><a href={value.address}>{value.backbutton}</a></button>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mdl-card__supporting-text quote">{value.quote}</div>
-                  <div className="mdl-card__actions mdl-card--border"></div>
+                  <img className="home-img" src={value.imagefront} alt={value.timeline}/>
+                  <a href={value.address} className="home-address"><span className="myinfo">{value.backbutton}</span></a>
                 </div>
               </div>
           )})
