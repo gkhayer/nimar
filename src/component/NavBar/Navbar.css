@@ -16,7 +16,7 @@
     color: #fff;
     font-size: 1.7rem;
     margin: 0 15px 0 0;
-    padding: 30px;
+    padding: 0 30px;
     text-decoration: none; }
     @media only screen and (max-width: 500px) {
       .navbar a {
@@ -26,3 +26,5 @@
     color: #fff; }
     .navbar .selected:visited, .navbar .selected:focus, .navbar .selected:hover, .navbar .selected:active {
       text-decoration: underline; }
+  .navbar .nav-span {
+    padding: 30px; }
