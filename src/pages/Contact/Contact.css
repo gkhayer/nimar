@@ -9,3 +9,10 @@
     flex-flow: row nowrap;
     justify-content: space-evenly;
     width: 100%; }
+    @media only screen and (max-width: 500px) {
+      .contact .row {
+        justify-content: space-between; } }
+
+.mapStyle {
+  align-items: center;
+  margin-top: 50px; }

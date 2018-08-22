@@ -43,7 +43,6 @@ class Resume extends React.Component {
           subheader={<ListSubheader component="div">
               <span className={classes.subtitle}><b>Full Name</b>: GAGANPREET K. HAYER</span>
               <span className={classes.subtitle}><b>Title</b>: WEB UI DEVELOPER</span>
-              <span className={classes.subtitle}><b>Email ID</b>: preetkaur9016@gmail.com</span>
             </ListSubheader>}>
           <ListItem button onClick={this.handleClick}>
             <ListItemText className="resume-titles" inset primary="PROFESSIONAL SUMMARY" />
