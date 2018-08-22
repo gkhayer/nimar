@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import MobileHeader from '../MobileHeader';
 import NavBar from '../NavBar';
 import './Header.css';

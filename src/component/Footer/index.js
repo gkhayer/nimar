@@ -1,7 +1,6 @@
 import React from 'react';
 import {routes} from '../../data';
 import { Link } from 'react-router-dom';
-import NavBar from '../NavBar';
 import './Footer.css';
 
 export default class Footer extends React.Component {
@@ -22,7 +21,7 @@ export default class Footer extends React.Component {
                   )
                 })
               }
-                <a href="https://www.linkedin.com/in/preet-kaur-5b0288122" target="_blank"><ion-icon size="large" name="logo-linkedin"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/preet-kaur-5b0288122" target="_blank" rel="noopener noreferrer"><ion-icon size="large" name="logo-linkedin"></ion-icon></a>
               </nav>
             </div>
           </div>
