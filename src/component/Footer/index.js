@@ -10,7 +10,8 @@ export default class Footer extends React.Component {
           <div className="footer">
             <div className="footerwrapper">
               <a href="mailto:preetkaur9016@gmail.com">preetkaur9016@gmail.com</a>
-              <span>408.714.8425</span>
+              <span></span>
+              <a href="tel:1-408.714.8425">1-408.714.8425</a>
               <nav className="footer-nav">
               {
                 routes.map((value, ids) => {

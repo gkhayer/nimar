@@ -1,21 +1,18 @@
 const home = [
   {
     imagefront: 'assets/images/babies/img1.jpg',
-    backbutton: 'Resume',
-    address: '/about',
-    quote: 'Resume'
+    backbutton: 'Memories',
+    address: '/memories',
   },
   {
     imagefront: 'assets/images/background/bk26.jpg',
-    backbutton: 'Education',
+    backbutton: 'Qualification',
     address: '/about',
-    quote: 'Education'
   },
   {
     imagefront: 'assets/images/nimar/image63.JPG',
     backbutton: 'Certification',
     address: '/about',
-    quote: 'Certification'
   }
 ];
 

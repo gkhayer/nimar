@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import Maps from '../../component/Map';
 
 export default class Contact extends React.Component {
   render() {
@@ -8,14 +9,19 @@ export default class Contact extends React.Component {
         <div className="headings">Contact Information</div>
         <div className="information">
           <div className="row">
-            <div className="col col1">First Name</div>
-            <div className="col col2">Gagan K. Hayer</div>
+            <span>First Name</span>
+            <span>Gagan K. Hayer</span>
           </div>
           <div className="row">
-            <div className="col col1">Email</div>
-            <div className="col col2">ghayer@itemnm.com</div>
+            <span>Email</span>
+            <span>preetkaur9016@gmail.com</span>
+          </div>
+          <div className="row">
+            <span>Location</span>
+            <span>Roseville, California, 95747</span>
           </div>
         </div>
+        <Maps />
       </div>
     )
   }
