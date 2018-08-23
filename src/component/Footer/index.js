@@ -16,7 +16,7 @@ export default class Footer extends React.Component {
               {
                 routes.map((value, ids) => {
                   return (
-                    <span>
+                    <span key={`footer${ids}`}>
                       <Link to={value.path} className="selected">{value.name}</Link>
                     </span>
                   )

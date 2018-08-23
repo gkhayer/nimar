@@ -76,8 +76,8 @@ class Resume extends React.Component {
           {
             workExpSec.map((info, idx) => {
               return (
-                <Collapse in={this.state.open} timeout="auto" unmountOnExit>
-                  <List component="div" disablePadding key={`WX${idx}`}>
+                <Collapse in={this.state.open} timeout="auto" unmountOnExit key={`WX${idx}`}>
+                  <List component="div" disablePadding>
                     <ListItemText inset primary={info.company} />
                     <ListItemText inset primary={info.duration} />
                     <ListItemText inset primary={info.jobtitle} />

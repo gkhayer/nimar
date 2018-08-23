@@ -15,7 +15,7 @@ export default class Maps extends Component {
     const MapWithAMarker = withScriptjs(withGoogleMap(props =>
       <GoogleMap
         defaultZoom={8}
-        defaultCenter={{ lat: -34.397, lng: 150.644 }}
+        defaultCenter={ center }
       >
         <Marker
           position={{ lat: -34.397, lng: 150.644 }}
